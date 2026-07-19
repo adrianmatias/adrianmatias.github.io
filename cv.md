@@ -1,0 +1,131 @@
+# ADRIAN MATIAS
+
+aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](https://linkedin.com/in/adrianmatiasdiez) | [github.com/adrianmatias](https://github.com/adrianmatias) | [x.com/adrian2mat](https://x.com/adrian2mat) | [adrianmatias.github.io](https://adrianmatias.github.io/)
+*Calle Miguel Cordero del Campillo 9, 24007 León – Spain*
+
+---
+
+## PROFILE
+
+Senior AI Engineer with 12 years delivering end-to-end ML and GenAI solutions from problem framing to production. Currently building LLM-driven platforms in consulting (PwC Advisory via Cavendish): typed backend contracts, document extraction, scoring engines, and production GenAI pipelines on Azure OpenAI. Prior depth in deep learning (PyTorch, transformers), ad-tech ranking & UA, fraud detection, Spark/Databricks, NLP, RL, and MLOps. Owns design → deployment → monitoring across client engagements. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+
+---
+
+## EXPERIENCE
+
+### Senior AI Engineer
+**Cavendish Professionals → PwC Advisory (long-term contract)** | León, Spain – Remote | *May 2026 – Present*
+
+Backend / analytic-engine engineer on a cross-timezone pod building an LLM-driven Vendor Evaluation Tool (VET) for PwC Advisory: ingest heterogeneous vendor submissions → extract → score → compare. Full-time engagement through Cavendish Professionals. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; deployed on internal AKS.
+
+**Key Achievements**
+- Shipped typed FE/BE response contract (Pydantic as source of truth) across a 3-PR arc, with a CI gate that fails on camelCase/snake_case wire drift — closing a recurring class of silent FE/BE integration bugs.
+- Made the backend the single source of truth for derived scores (out of raw LLM output); diagnosed and fixed a weighting defect where headline vendor score ignored framework dimension weights.
+- Delivered document-level provenance (every extracted value traces to source) and a local e2e test harness for reproducible assessment runs outside the deployed stack.
+- Ran a market-scan / vendor-crawl spike end-to-end to validate the generic LLM scoring path and surface the weighting defect.
+- Correctness reviewer on peers' PRs (load-bearing scoring/framework bugs caught pre-merge). Delivery: 16 authored PRs in ~3 weeks (11 merged).
+
+### Data Scientist → DS Technical Lead
+**Appodeal**: [appodeal.com](https://appodeal.com) | León, Spain – Remote | *Dec 2024 – Jan 2026*
+
+Developed install prediction models for mobile user acquisition: cold-start, transformers, user embeddings, transfer learning, MLOps, production pipelines, parity resolution, experimentation, and monitoring. Progressed toward technical leadership based on ownership and strategic perspective.
+
+**Key Achievements**
+- Unified modeling across targets, advertisers, and platforms via attention/transformer architecture, increasing end KPI.
+- Enabled seamless advertiser onboarding through novel cold-start techniques (custom PyTorch + transfer learning).
+- Resolved parity mismatches and calibration gaps; productionized parity workflows with unit tests and decoupling in Databricks.
+- Transfer-learning user embeddings achieving performance parity with orders-of-magnitude cost savings.
+
+<!-- pagebreak -->
+
+### Senior Data Scientist
+**Quant AI Lab**: [quant.global](https://quant.global) | León, Spain – Remote | *Jul 2024 – Dec 2024*
+
+Designed and delivered end-to-end ML solutions for international clients; reviewed technical scope, aligned with stakeholders, and supervised model productivization.
+
+**Key Contributions**
+- Led rapid turnaround of underperforming client ML system (utility fraud detection & ranking): diagnosed architectural issues, executed a surgical plan, restored accuracy/efficiency, and recovered client satisfaction.
+- Discovered critical issues in data ingestion and feature-engineering pipelines.
+- Led real-time credit card fraud classifier combining scalable ML with deep VAE. Open version: [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)
+
+### Senior Data Scientist
+**Chartboost**: [chartboost.com](https://chartboost.com) | León, Spain – Remote | *Jun 2023 – Jun 2024*
+
+Developed ad ranking and reinforcement learning systems for in-app game advertising; advanced DSP performance through large-scale experimentation and behavioral analysis.
+
+**Key Achievements**
+- Evolved and monitored Bayesian Bandit RL system with policy evaluation tools; designed tailored online/offline evaluation frameworks.
+- Built Two-Towers neural ranking algorithm based on recommender systems.
+- Post-mortem analysis of adversarial DSP dynamics and model feedback loops.
+
+### Machine Learning Engineer
+**RavenPack** | León, Spain – Remote | *Mar 2022 – Jan 2023*
+
+Researched, implemented, and maintained text analytics, NLU, and semantic search products on massive financial news data; productionized prototypes with emphasis on MLOps and reproducibility.
+
+**Key Achievements**
+- Few-shot search personalization: simplified architecture, reduced error 30%.
+- Active learning PoC for learn-to-rank: projected 300% annotation efficiency gain.
+- Novel long-text fingerprinting algorithm for duplicate content detection.
+
+#### Earlier Roles
+
+| | |
+|---|---|
+| **Numbrs** *Aug 2020 – Oct 2021*<br>Extended Deep Learning / Active Learning for transaction processing; scaled classifier across countries with GDPR-compliant pipelines. | **IEBS School** *Oct 2019 – Oct 2021*<br>Webinars and masterclasses on real-time Big Data, AI, and ML applications. |
+| **Stratio BD** *Aug 2019 – Aug 2020*<br>Propensity/churn on Spark; BERT+graph email segmentation; multi-source weather DB (Elasticsearch/Flask). | **DOCOMO DIGITAL** *Apr 2017 – Aug 2019*<br>Led fraud detection (99.8% specificity, &lt;50 ms) and default-payment filtering; mentored juniors. |
+| **Digilant** *Jun 2015 – Apr 2017*<br>Redesigned Consumer Persona ML model; Game Theory attribution prototype; co-directed Master's thesis. | **2007–2015**<br>Civil/tunnel engineering; university teaching: Math, Physics, Chemistry. |
+
+#### Freelance
+
+**Freelance Data Scientist / ML Engineer** | *Mar 2022 – Jun 2025*
+
+On-demand projects in semantic search, time series forecasting, and portfolio optimization for financial analysis.
+
+<!-- pagebreak -->
+
+## SKILLS
+
+| **Core Technologies** | **Machine Learning & GenAI** |
+| --- | --- |
+| Python, FastAPI, Pydantic, PostgreSQL, PyTorch, Transformers, Azure OpenAI / Azure / AKS, AWS/S3, Databricks, PySpark, Pandas, SQL, Docker, MLflow, Git, GitHub Actions, AI-augmented tools (Ollama, llama.cpp, Hermes Agent) | LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction & provenance, scoring engines, Deep Learning (attention, embeddings, transfer learning), Recommender Systems, NLP, RL / Bayesian Bandits, MLOps (parity, A/B, monitoring), Few-Shot / Active Learning, Ranking |
+| **Engineering Practices** | **Consulting & Soft Skills** |
+| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting delivery, stakeholder communication, PR correctness review, mentoring, business impact focus, simplification / unification |
+
+---
+
+## SELECTED COURSES & CERTIFICATIONS
+
+| | |
+|---|---|
+| - Claude Code: A Highly Agentic Coding Assistant: Coursera (2026) | - Functional Programming in Scala Specialization: Coursera (9.2/10, 2017) |
+| - ML Engineering for Production (MLOps) Specialization: Coursera (2021) | - Bitcoin and Cryptocurrency Technologies: Coursera (9.5/10, 2017) |
+| - Deep Learning with PyTorch: Siamese Networks (2022) | - Algorithms & Data Structures with Java (I, II): Coursera (8.5/10, 2014) |
+| - Deep Learning Specialization: Coursera (2016) | - Analytics Edge: Data Science & Predictive Models: MITx (9.3/10, 2014) |
+| - Structuring Machine Learning Projects: Coursera (2018) | - Introduction to Programming & Data Science Using Python (I, II): MITx (8.7/10, 2014) |
+| - Apache Spark for Big Data & Scalable ML: Coursera (9.9/10, 2015) | |
+
+---
+
+## SELECTED PROJECTS
+
+- **not the tao with adrian matias**: [youtube.com/@notTheTaoWithAdrianMatias](https://youtube.com/@notTheTaoWithAdrianMatias)  
+  Podcast exploring simplicity, consciousness, reality, machine learning, coding, sovereign AI.
+- **RAG Blog System**: [github.com/adrianmatias/ml-sandbox/tree/master/ragblog](https://github.com/adrianmatias/ml-sandbox/tree/master/ragblog)  
+  Retrieval-augmented generation pipeline integrating LLMs, vector embeddings, and web crawling.
+- **The Mirror**: https://github.com/adrianmatias/the-mirror  
+  Knowledge repository based on llm-wiki for personalized assistant and insight for agentic AI.
+- **Credit Card Transaction Fraud Classifier**: [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)  
+  Real-time fraud detection API (classical + unsupervised signals). Deploy-ready: FastAPI, Docker, RayServe.
+
+---
+
+## EDUCATION
+
+- **Master's in Geological Engineering**: University of Oviedo (2010–2012)
+- **Degree in Mining & Energy Engineering**: University of León (2012)
+- **Bachelor in Mining Engineering**: University of León (2003–2007)
+
+---
+
+*References available on request*

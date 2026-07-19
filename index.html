@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Adrian Matias — Senior AI Engineer. GenAI, ML production, consulting. León, Spain · Remote.">
+<meta name="theme-color" content="#0a0a0a">
+<title>Adrian Matias — Senior AI Engineer</title>
+<link rel="canonical" href="https://adrianmatias.github.io/">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --fg: #e8e6e3;
+    --muted: #8a8680;
+    --dim: #5c5955;
+    --accent: #c9a227;
+    --accent-dim: #8a7020;
+    --accent-soft: rgba(201, 162, 39, 0.12);
+    --border: #1e1e1e;
+    --card: #111111;
+    --card-hover: #161616;
+    --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    --max: 820px;
+    --ease: cubic-bezier(.2,.7,.2,1);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; transition: color .15s var(--ease); }
+  a:hover { color: #e0bc45; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
+
+  /* top nav */
+  .nav {
+    position: sticky; top: 0; z-index: 40;
+    backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+    background: rgba(10,10,10,.82);
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s;
+  }
+  .nav.scrolled { border-color: var(--border); }
+  .nav-inner {
+    max-width: var(--max); margin: 0 auto; padding: 12px 22px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .nav-brand { font-weight: 700; letter-spacing: .04em; color: var(--fg); font-size: .92rem; }
+  .nav-brand:hover { color: var(--accent); text-decoration: none; }
+  .nav-links { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .78rem; font-family: var(--mono); }
+  .nav-links a { color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .nav-links a:hover, .nav-links a.active { color: var(--accent); text-decoration: none; }
+  .nav-toggle {
+    display: none; background: none; border: 1px solid var(--border);
+    color: var(--fg); padding: 6px 10px; border-radius: 4px; font-family: var(--mono); font-size: .75rem; cursor: pointer;
+  }
+
+  /* hero */
+  header.hero { padding: 56px 0 36px; border-bottom: 1px solid var(--border); }
+  .eyebrow {
+    font-family: var(--mono); font-size: .72rem; color: var(--accent);
+    letter-spacing: .14em; text-transform: uppercase; margin-bottom: 14px;
+  }
+  header h1 {
+    font-size: clamp(2rem, 5vw, 2.6rem); font-weight: 700;
+    letter-spacing: -.03em; line-height: 1.1; margin-bottom: 10px;
+  }
+  .subtitle { color: var(--muted); font-size: 1.05rem; margin-bottom: 18px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px; }
+  .chip {
+    font-family: var(--mono); font-size: .72rem; color: var(--muted);
+    border: 1px solid var(--border); background: var(--card);
+    padding: 4px 10px; border-radius: 999px;
+  }
+  .links { display: flex; flex-wrap: wrap; gap: 10px 16px; font-size: .88rem; }
+  .links a {
+    color: var(--fg); border-bottom: 1px solid var(--border); padding-bottom: 1px;
+  }
+  .links a:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+
+  /* sections */
+  section { padding: 44px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: .85rem; font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--fg); margin-bottom: 18px;
+    display: flex; align-items: baseline; gap: 12px;
+  }
+  h2::after {
+    content: ""; flex: 1; height: 1px; background: var(--border); position: relative; top: -2px;
+  }
+  h3 { font-size: 1.02rem; font-weight: 600; color: var(--fg); margin: 0 0 6px; }
+  p { color: var(--muted); margin-bottom: 12px; }
+  p.lead { color: var(--fg); font-size: 1.02rem; line-height: 1.7; }
+  p:last-child { margin-bottom: 0; }
+
+  /* detail disclosure */
+  details.block {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; margin-bottom: 12px; overflow: hidden;
+    transition: border-color .2s var(--ease), background .2s var(--ease);
+  }
+  details.block:hover { border-color: #2a2a2a; background: var(--card-hover); }
+  details.block[open] { border-color: var(--accent-dim); }
+  details.block > summary {
+    list-style: none; cursor: pointer; padding: 16px 18px;
+    display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; align-items: start;
+    user-select: none;
+  }
+  details.block > summary::-webkit-details-marker { display: none; }
+  details.block > summary .role-title { font-weight: 600; color: var(--fg); font-size: 1rem; }
+  details.block > summary .role-meta {
+    font-family: var(--mono); font-size: .72rem; color: var(--dim); grid-column: 1;
+  }
+  details.block > summary .hint {
+    font-family: var(--mono); font-size: .68rem; color: var(--dim);
+    letter-spacing: .06em; text-transform: uppercase; align-self: center;
+    transition: color .15s;
+  }
+  details.block[open] > summary .hint { color: var(--accent); }
+  details.block > summary .hint::before { content: "+ "; }
+  details.block[open] > summary .hint::before { content: "– "; }
+  .detail-body { padding: 0 18px 18px; border-top: 1px solid var(--border); }
+  .detail-body > :first-child { margin-top: 14px; }
+  .detail-body ul { list-style: none; margin: 10px 0 0; }
+  .detail-body li {
+    position: relative; padding-left: 14px; margin-bottom: 7px;
+    font-size: .92rem; color: var(--muted);
+  }
+  .detail-body li::before {
+    content: "▸"; position: absolute; left: 0; color: var(--accent-dim); font-size: .7rem; top: 3px;
+  }
+  .detail-label {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--dim); margin: 14px 0 6px;
+  }
+
+  /* projects */
+  .grid { display: grid; gap: 12px; }
+  .card {
+    display: block; background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 18px; transition: border-color .2s var(--ease), transform .2s var(--ease);
+    color: inherit;
+  }
+  a.card:hover { border-color: var(--accent-dim); text-decoration: none; transform: translateY(-1px); }
+  .card-top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; flex-wrap: wrap; margin-bottom: 8px; }
+  .card-title { font-weight: 600; color: var(--fg); }
+  .card-meta { font-family: var(--mono); font-size: .7rem; color: var(--dim); }
+  .card p { font-size: .9rem; margin: 0; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .tag {
+    font-family: var(--mono); font-size: .68rem; color: var(--muted);
+    background: var(--bg); border: 1px solid var(--border);
+    padding: 2px 8px; border-radius: 4px;
+  }
+
+  /* skills */
+  .skill-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  }
+  .skill-block {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 14px 16px;
+  }
+  .skill-block h4 {
+    font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+  }
+  .skill-block p { font-size: .86rem; margin: 0; line-height: 1.55; }
+
+  /* two col compact */
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+  .mini {
+    font-size: .88rem; color: var(--muted); padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .mini strong { color: var(--fg); display: block; font-size: .92rem; }
+  .mini span { font-family: var(--mono); font-size: .7rem; color: var(--dim); }
+
+  .btn-row { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .btn {
+    display: inline-block; padding: 9px 16px;
+    border: 1px solid var(--accent); color: var(--accent);
+    font-family: var(--mono); font-size: .78rem; border-radius: 4px;
+    transition: background .15s, color .15s;
+  }
+  .btn:hover { background: var(--accent); color: var(--bg); text-decoration: none; }
+  .btn.ghost { border-color: var(--border); color: var(--muted); }
+  .btn.ghost:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
+
+  .epigraph {
+    margin: 28px 0 0; padding: 18px 20px;
+    border-left: 3px solid var(--accent-dim);
+    background: var(--card); color: var(--muted);
+    font-style: italic; font-size: .92rem; line-height: 1.7;
+  }
+  .epigraph cite {
+    display: block; margin-top: 8px; font-style: normal;
+    font-family: var(--mono); font-size: .72rem; color: var(--dim); letter-spacing: .04em;
+  }
+
+  footer {
+    padding: 36px 0 56px; text-align: center;
+    font-size: .8rem; color: var(--dim); font-family: var(--mono);
+  }
+  footer a { color: var(--muted); }
+
+  /* expand all control */
+  .level-bar {
+    display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
+    margin-bottom: 16px; font-family: var(--mono); font-size: .72rem; color: var(--dim);
+  }
+  .level-bar button {
+    background: var(--card); border: 1px solid var(--border); color: var(--muted);
+    font-family: inherit; font-size: inherit; padding: 4px 10px; border-radius: 4px;
+    cursor: pointer; transition: border-color .15s, color .15s;
+  }
+  .level-bar button:hover, .level-bar button.on {
+    border-color: var(--accent-dim); color: var(--accent);
+  }
+
+  @media (max-width: 680px) {
+    .skill-grid, .two { grid-template-columns: 1fr; }
+    .nav-toggle { display: block; }
+    .nav-links {
+      display: none; position: absolute; left: 0; right: 0; top: 100%;
+      background: rgba(10,10,10,.96); border-bottom: 1px solid var(--border);
+      padding: 12px 22px 16px; flex-direction: column; gap: 10px;
+    }
+    .nav-links.open { display: flex; }
+    header.hero { padding-top: 36px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#top">AM</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">menu</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="cv.pdf">PDF</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap" id="top">
+  <header class="hero">
+    <div class="eyebrow">Senior AI Engineer · León, Spain · Remote</div>
+    <h1>Adrian Matias</h1>
+    <p class="subtitle">GenAI production · ML systems · consulting delivery</p>
+    <div class="chips">
+      <span class="chip">LLMs / RAG / agents</span>
+      <span class="chip">PyTorch / transformers</span>
+      <span class="chip">FastAPI · Azure · Databricks</span>
+      <span class="chip">12 years</span>
+    </div>
+    <div class="links">
+      <a href="mailto:aadrian.mat@gmail.com">aadrian.mat@gmail.com</a>
+      <a href="https://linkedin.com/in/adrianmatiasdiez" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/adrianmatias" rel="noopener">GitHub</a>
+      <a href="https://x.com/adrian2mat" rel="noopener">X</a>
+      <a href="https://youtube.com/@notTheTaoWithAdrianMatias" rel="noopener">Podcast</a>
+      <a href="cv.pdf">CV (PDF)</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="lead">
+      Senior AI Engineer with 12 years delivering end-to-end ML and GenAI solutions from problem framing to production.
+      Currently building LLM-driven platforms in consulting (PwC Advisory via Cavendish): typed backend contracts,
+      document extraction, scoring engines, and production GenAI pipelines on Azure OpenAI.
+    </p>
+    <p>
+      Prior depth in deep learning, ad-tech ranking &amp; user acquisition, fraud detection, Spark/Databricks, NLP, RL, and MLOps.
+      Owns design → deployment → monitoring. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+    </p>
+    <div class="epigraph">
+      Compression — removing what is not essential — is the deepest form of truth-telling in code and in thought.
+      <cite>— working principle</cite>
+    </div>
+    <div class="btn-row">
+      <a class="btn" href="cv.pdf">Download PDF CV</a>
+      <a class="btn ghost" href="#experience">Read experience</a>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="level-bar">
+      <span>detail</span>
+      <button type="button" id="expandAll" class="on">expanded</button>
+      <button type="button" id="collapseAll">summary</button>
+    </div>
+
+    <details class="block" open>
+      <summary>
+        <span class="role-title">Senior AI Engineer</span>
+        <span class="hint">detail</span>
+        <span class="role-meta">Cavendish Professionals → PwC Advisory · León, Remote · May 2026 – Present</span>
+      </summary>
+      <div class="detail-body">
+        <p>Backend / analytic-engine engineer on a cross-timezone pod building an LLM-driven Vendor Evaluation Tool (VET) for PwC Advisory: ingest heterogeneous vendor submissions → extract → score → compare. Full-time long-term contract via Cavendish. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; AKS.</p>
+        <div class="detail-label">Key achievements</div>
+        <ul>
+          <li>Shipped typed FE/BE response contract (Pydantic as source of truth) across a 3-PR arc, with a CI gate that fails on camelCase/snake_case wire drift — closing silent FE/BE integration bugs.</li>
+          <li>Made the backend the single source of truth for derived scores (out of raw LLM output); diagnosed and fixed a weighting defect where headline vendor score ignored framework dimension weights.</li>
+          <li>Delivered document-level provenance and a local e2e test harness for reproducible assessment runs outside the deployed stack.</li>
+          <li>Ran a market-scan / vendor-crawl spike end-to-end to validate the generic LLM scoring path.</li>
+          <li>Correctness reviewer on peers' PRs. Delivery: 16 authored PRs in ~3 weeks (11 merged).</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="block" open>
+      <summary>
+        <span class="role-title">Data Scientist → DS Technical Lead</span>
+        <span class="hint">detail</span>
+        <span class="role-meta">Appodeal · León, Remote · Dec 2024 – Jan 2026</span>
+      </summary>
+      <div class="detail-body">
+        <p>Install prediction for mobile user acquisition: cold-start, transformers, user embeddings, transfer learning, MLOps, production pipelines, parity resolution, experimentation, monitoring. Progressed toward technical leadership on ownership and strategic perspective.</p>
+        <div class="detail-label">Key achievements</div>
+        <ul>
+          <li>Unified modeling across targets, advertisers, and platforms via attention/transformer architecture, increasing end KPI.</li>
+          <li>Novel cold-start techniques (custom PyTorch + transfer learning) for advertiser onboarding.</li>
+          <li>Resolved parity mismatches and calibration gaps; productionized parity workflows with unit tests in Databricks.</li>
+          <li>Transfer-learning user embeddings with performance parity at orders-of-magnitude cost savings.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="block" open>
+      <summary>
+        <span class="role-title">Senior Data Scientist</span>
+        <span class="hint">detail</span>
+        <span class="role-meta">Quant AI Lab · León, Remote · Jul 2024 – Dec 2024</span>
+      </summary>
+      <div class="detail-body">
+        <p>End-to-end ML for international clients: scope review, stakeholder alignment, model productivization.</p>
+        <div class="detail-label">Key contributions</div>
+        <ul>
+          <li>Led rapid turnaround of underperforming client ML system (utility fraud detection &amp; ranking): surgical plan, restored accuracy/efficiency, recovered client satisfaction.</li>
+          <li>Surfaced critical issues in data ingestion and feature-engineering pipelines.</li>
+          <li>Real-time credit card fraud classifier (classical ML + deep VAE). Open: github.com/adrianmatias/ml-sandbox/tree/master/tx_class</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="block">
+      <summary>
+        <span class="role-title">Senior Data Scientist</span>
+        <span class="hint">detail</span>
+        <span class="role-meta">Chartboost · León, Remote · Jun 2023 – Jun 2024</span>
+      </summary>
+      <div class="detail-body">
+        <p>Ad ranking and reinforcement learning for in-app game advertising; DSP performance via large-scale experimentation.</p>
+        <div class="detail-label">Key achievements</div>
+        <ul>
+          <li>Bayesian Bandit RL system with policy evaluation tools; tailored online/offline evaluation frameworks.</li>
+          <li>Two-Towers neural ranking from recommender-systems patterns.</li>
+          <li>Post-mortems on adversarial DSP dynamics and model feedback loops.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="block">
+      <summary>
+        <span class="role-title">Machine Learning Engineer</span>
+        <span class="hint">detail</span>
+        <span class="role-meta">RavenPack · León, Remote · Mar 2022 – Jan 2023</span>
+      </summary>
+      <div class="detail-body">
+        <p>Text analytics, NLU, and semantic search on massive financial news data; MLOps and reproducibility.</p>
+        <div class="detail-label">Key achievements</div>
+        <ul>
+          <li>Few-shot search personalization: simplified architecture, −30% error.</li>
+          <li>Active learning PoC for learn-to-rank: projected +300% annotation efficiency.</li>
+          <li>Long-text fingerprinting for duplicate content detection.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="block">
+      <summary>
+        <span class="role-title">Earlier roles &amp; freelance</span>
+        <span class="hint">detail</span>
+        <span class="role-meta">2015 – 2025 · ML, fraud, teaching, consulting</span>
+      </summary>
+      <div class="detail-body">
+        <div class="two">
+          <div class="mini"><strong>Numbrs</strong><span>Aug 2020 – Oct 2021</span>Deep Learning / Active Learning for transactions; GDPR-compliant multi-country pipelines.</div>
+          <div class="mini"><strong>IEBS School</strong><span>Oct 2019 – Oct 2021</span>Webinars and masterclasses on Big Data, AI, ML.</div>
+          <div class="mini"><strong>Stratio BD</strong><span>Aug 2019 – Aug 2020</span>Propensity/churn on Spark; BERT+graph email segmentation.</div>
+          <div class="mini"><strong>DOCOMO DIGITAL</strong><span>Apr 2017 – Aug 2019</span>Fraud detection (99.8% specificity, &lt;50 ms); mentored juniors.</div>
+          <div class="mini"><strong>Digilant</strong><span>Jun 2015 – Apr 2017</span>Consumer Persona ML redesign; Game Theory attribution.</div>
+          <div class="mini"><strong>Freelance</strong><span>Mar 2022 – Jun 2025</span>Semantic search, time series, portfolio optimization.</div>
+        </div>
+      </div>
+    </details>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="grid">
+      <a class="card" href="https://github.com/adrianmatias/the-mirror" rel="noopener" target="_blank">
+        <div class="card-top">
+          <span class="card-title">The Mirror</span>
+          <span class="card-meta">github.com/adrianmatias/the-mirror</span>
+        </div>
+        <p>Knowledge repository based on llm-wiki for a personalized assistant and insight layer for agentic AI. Persistent synthesis across sessions.</p>
+        <div class="tags"><span class="tag">RAG</span><span class="tag">LLM wiki</span><span class="tag">Agents</span><span class="tag">Obsidian</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/adrianmatias/ml-sandbox/tree/master/ragblog" rel="noopener" target="_blank">
+        <div class="card-top">
+          <span class="card-title">RAG Blog System</span>
+          <span class="card-meta">ml-sandbox/ragblog</span>
+        </div>
+        <p>Retrieval-augmented generation pipeline integrating LLMs, vector embeddings, and web crawling. Local-first path on consumer GPUs.</p>
+        <div class="tags"><span class="tag">RAG</span><span class="tag">Embeddings</span><span class="tag">Local AI</span><span class="tag">Python</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class" rel="noopener" target="_blank">
+        <div class="card-top">
+          <span class="card-title">Credit Card Fraud Classifier</span>
+          <span class="card-meta">ml-sandbox/tx_class</span>
+        </div>
+        <p>Real-time fraud detection API: classical classification + unsupervised anomaly signals. Deploy-ready FastAPI, Docker, RayServe.</p>
+        <div class="tags"><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">Anomaly</span><span class="tag">RayServe</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/adrianmatias/the-real-mle-challenge-adrianmatias" rel="noopener" target="_blank">
+        <div class="card-top">
+          <span class="card-title">The Real MLE Challenge</span>
+          <span class="card-meta">production ML refactor</span>
+        </div>
+        <p>Dev-to-production refactor: inference pipelines, price-prediction API, Docker. Clean structure, reproducibility, MLOps habits.</p>
+        <div class="tags"><span class="tag">MLOps</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">PyTorch</span></div>
+      </a>
+
+      <a class="card" href="https://github.com/adrianmatias/seedtag-doc-classification" rel="noopener" target="_blank">
+        <div class="card-top">
+          <span class="card-title">Document Classification</span>
+          <span class="card-meta">seedtag-doc-classification</span>
+        </div>
+        <p>NLP classification with attention and transformer transfer learning. Batched prediction and GPU/CPU deployment paths.</p>
+        <div class="tags"><span class="tag">NLP</span><span class="tag">Transformers</span><span class="tag">Transfer learning</span></div>
+      </a>
+
+      <a class="card" href="https://youtube.com/@notTheTaoWithAdrianMatias" rel="noopener" target="_blank">
+        <div class="card-top">
+          <span class="card-title">not the tao — Podcast</span>
+          <span class="card-meta">YouTube</span>
+        </div>
+        <p>Episodes on simplicity, consciousness, reality, machine learning, coding, and sovereign AI. No guests, no ads, no filler.</p>
+        <div class="tags"><span class="tag">Podcast</span><span class="tag">ML</span><span class="tag">Philosophy</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-grid">
+      <div class="skill-block">
+        <h4>Core technologies</h4>
+        <p>Python, FastAPI, Pydantic, PostgreSQL, PyTorch, Transformers, Azure OpenAI / Azure / AKS, AWS/S3, Databricks, PySpark, Pandas, SQL, Docker, MLflow, Git, GitHub Actions, AI-augmented tools (Ollama, llama.cpp, Hermes Agent)</p>
+      </div>
+      <div class="skill-block">
+        <h4>Machine learning &amp; GenAI</h4>
+        <p>LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction &amp; provenance, scoring engines, deep learning (attention, embeddings, transfer learning), recommender systems, NLP, RL / Bayesian bandits, MLOps, few-shot / active learning, ranking</p>
+      </div>
+      <div class="skill-block">
+        <h4>Engineering practices</h4>
+        <p>Clean code, typed contracts as source of truth, CI drift gates, OOP &amp; FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership</p>
+      </div>
+      <div class="skill-block">
+        <h4>Consulting &amp; soft skills</h4>
+        <p>Multi-client consulting delivery, stakeholder communication, PR correctness review, mentoring, business impact focus, simplification / unification</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education &amp; courses</h2>
+    <div class="two">
+      <div class="mini"><strong>Master's in Geological Engineering</strong><span>University of Oviedo · 2010–2012</span></div>
+      <div class="mini"><strong>Degree in Mining &amp; Energy Engineering</strong><span>University of León · 2012</span></div>
+      <div class="mini"><strong>Bachelor in Mining Engineering</strong><span>University of León · 2003–2007</span></div>
+      <div class="mini"><strong>Selected courses</strong><span>Coursera / MITx</span>Claude Code (2026) · MLOps Specialization · Deep Learning Specialization · Spark for Scalable ML · FP in Scala · Analytics Edge (MITx)</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="lead">
+      Open to Senior AI Engineer / AI Consultant roles — GenAI production, multi-client delivery, internal labs.
+      Remote from León, Spain.
+    </p>
+    <div class="btn-row">
+      <a class="btn" href="mailto:aadrian.mat@gmail.com">Email</a>
+      <a class="btn ghost" href="https://linkedin.com/in/adrianmatiasdiez" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/adrianmatias" rel="noopener">GitHub</a>
+      <a class="btn ghost" href="cv.pdf">PDF CV</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>adrianmatias.github.io · source of truth with the PDF CV</p>
+    <p><a href="mailto:aadrian.mat@gmail.com">aadrian.mat@gmail.com</a> · León, Spain</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  const nav = document.getElementById('nav');
+  const toggle = document.getElementById('navToggle');
+  const links = document.getElementById('navLinks');
+  const blocks = () => document.querySelectorAll('details.block');
+
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 8);
+  }, { passive: true });
+
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+
+  const exp = document.getElementById('expandAll');
+  const col = document.getElementById('collapseAll');
+  function setOpen(v) {
+    blocks().forEach(d => { d.open = v; });
+    exp.classList.toggle('on', v);
+    col.classList.toggle('on', !v);
+  }
+  exp.addEventListener('click', () => setOpen(true));
+  col.addEventListener('click', () => setOpen(false));
+
+  // active section highlight
+  const secs = [...document.querySelectorAll('section[id]')];
+  const navAs = [...links.querySelectorAll('a[href^="#"]')];
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const id = e.target.id;
+      navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+    });
+  }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+  secs.forEach(s => io.observe(s));
+})();
+</script>
+</body>
+</html>
