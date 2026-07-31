@@ -7,7 +7,7 @@ aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](htt
 
 ## PROFILE
 
-Senior AI Engineer with 12 years delivering end-to-end ML and GenAI solutions from problem framing to production. Currently building LLM-driven platforms in consulting (PwC Advisory via Cavendish): typed backend contracts, document extraction, scoring engines, and production GenAI pipelines on Azure OpenAI. Prior depth in deep learning (PyTorch, transformers), ad-tech ranking & UA, fraud detection, Spark/Databricks, NLP, RL, and MLOps. Owns design → deployment → monitoring across client engagements. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks — with current work in GenAI: document extraction, scoring engines, and LLM-driven platforms on Azure OpenAI (PwC Advisory via Cavendish). Owns design → deployment → monitoring across client engagements. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
 
 ---
 
