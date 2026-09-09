@@ -289,7 +289,7 @@
       recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks.
     </p>
       <p>
-      Current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the seat the team labeled backend architect &amp; correctness gatekeeper. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+      Current work in GenAI: LLM-as-judge product that scores software vendors, grounding raw vendor documentation into cited evidence, scoring engines. Owned the typed output contract and the correctness gate set. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
     </p>
     <div class="epigraph">
       Compression — removing what is not essential — is the deepest form of truth-telling in code and in thought.
@@ -313,25 +313,15 @@
       <summary>
         <span class="role-title">Senior AI Engineer</span>
         <span class="hint">detail</span>
-        <span class="role-meta">Cavendish Professionals → PwC Advisory · León, Remote · May 2026 – Present</span>
+        <span class="role-meta">Cavendish Professionals → PwC Contractor · León, Remote · May 2026 – Present</span>
       </summary>
       <div class="detail-body">
-        <p>Senior AI Engineer on VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten weeks, four seats held in sequence — backend feature developer, contract &amp; schema owner, assessment-workbook lane owner — finishing by deciding what counts as correct. The last seat carries the most weight per hour and the least visible output: when a budget review counts merged features, it also carries the least protection. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions, AKS.</p>
-        <div class="detail-label">Where I sat — the team's label, backed by the review record</div>
+        <p>Senior engineer on an LLM-as-judge product that scores software vendors. Created the human ground-truth lane alone at creation: 9 modules, 2,765 lines – domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up, which reconcile human evaluator scores against model scores.</p>
+        <div class="detail-label">Key achievements</div>
         <ul>
-          <li><strong>Backend architect &amp; correctness gatekeeper</strong> — the label the team's own page gave the seat; the review record supports it without any narrative help.</li>
-          <li><strong>A pair, not a hierarchy</strong> — review traffic with the senior counterpart ran symmetric, 212 against 204; every hard call about transport, tenancy, provenance and lane separation settled between those two seats — and it settled toward less coupling.</li>
-          <li><strong>Carried correctness alone where needed</strong> — 46 of 139 pull requests reached a decision with no second pair of eyes: the honest edge of being the gate.</li>
-        </ul>
-        <div class="detail-label">The strongest thing</div>
-        <ul>
-          <li><strong>Made correctness executable instead of stating it</strong> — enforcement artifacts each move a belief out of one head into a place that fails without its author: the CI gate set, the machine-readable requirement contract tree, the schema-completeness gates, and formal request-change verdicts. That skill transfers to any team, and it outranks the merged-PR count.</li>
-          <li><strong>Built for the inheritor</strong> — the enforcement landed in the final two weeks of the ten-week engagement, so most of its value accrues to whoever inherits the repository — by design, not by accident.</li>
-        </ul>
-        <div class="detail-label">What VET is</div>
-        <ul>
-          <li>AI-assisted vendor evaluation for contractual, binding decisions: vendor submissions and documentation grounded into cited, auditable evidence per requirement; heterogeneous data aggregated by domain experts into decision-ready scores.</li>
-          <li>Built on Azure OpenAI with a contract-first backend (typed Pydantic contracts, CI enforcement, reproducible local assessment runs). Not yet in production — the engagement was measured on delivered correctness, not live traffic.</li>
+          <li>Owned the typed output contract and the correctness gate set: type baselines per file and rule, a complexity ratchet, mutation tests and required status checks.</li>
+          <li>Shipped 116 of 147 pull requests in ten weeks, median 3.0 hours to merge. Reviewed 52% of every pull request the rest of the team opened.</li>
+          <li>Ran agentic development at production scale, measured it, and tuned turn count over model tier.</li>
         </ul>
       </div>
     </details>
@@ -500,7 +490,7 @@
       </div>
       <div class="skill-block">
         <h4>Consulting &amp; soft skills</h4>
-        <p>Multi-client consulting delivery, stakeholder communication, correctness gatekeeping &amp; requirements arbitration, mentoring, business impact focus, simplification / unification</p>
+        <p>Multi-client consulting delivery, stakeholder communication, correctness gatekeeping, mentoring, business impact focus, simplification / unification</p>
       </div>
     </div>
   </section>

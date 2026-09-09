@@ -7,29 +7,22 @@ aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](htt
 
 ## PROFILE
 
-Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks — with current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the seat the team labeled backend architect & correctness gatekeeper. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks. Current work in GenAI: LLM-as-judge product that scores software vendors, grounding raw vendor documentation into cited evidence, scoring engines. Owned  the typed output contract and the correctness gate set. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
 
 ---
 
 ## EXPERIENCE
 
 ### Senior AI Engineer
-**Cavendish Professionals → PwC Advisory (long-term contract)** | León, Spain – Remote | *May 2026 – Present*
+**Cavendish Professionals → PwC Contractor**  [cavendish-professionals](https://www.linkedin.com/company/cavendish-professionals/) | León, Spain – Remote | *May 2026 – Present*
 
-Senior AI Engineer on VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten weeks, four seats held in sequence — backend feature developer, contract & schema owner, assessment-workbook lane owner — finishing by deciding what counts as correct. The last seat carries the most weight per hour and the least visible output: when a budget review counts merged features, it also carries the least protection. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; deployed on internal AKS.
+Senior engineer on an LLM-as-judge product that scores software vendors. Created the human ground-truth lane alone at creation: 9 modules, 2,765 lines – domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up, which reconcile human evaluator scores against model scores.
 
-**Where I sat — the team's label, backed by the review record**
-- **Backend architect & correctness gatekeeper** — the label the team's own page gave the seat; the review record supports it without any narrative help.
-- **A pair, not a hierarchy** — review traffic with the senior counterpart ran symmetric, 212 against 204; every hard call about transport, tenancy, provenance and lane separation settled between those two seats — and it settled toward less coupling.
-- **Carried correctness alone where needed** — 46 of 139 pull requests reached a decision with no second pair of eyes: the honest edge of being the gate.
+**Key Achievements**
 
-**The strongest thing**
-- **Made correctness executable instead of stating it** — enforcement artifacts each move a belief out of one head into a place that fails without its author: the CI gate set, the machine-readable requirement contract tree, the schema-completeness gates, and formal request-change verdicts. That skill transfers to any team, and it outranks the merged-PR count.
-- **Built for the inheritor** — the enforcement landed in the final two weeks of the ten-week engagement, so most of its value accrues to whoever inherits the repository — by design, not by accident.
-
-**What VET is**
-- AI-assisted vendor evaluation for contractual, binding decisions: vendor submissions and documentation grounded into cited, auditable evidence per requirement; heterogeneous data aggregated by domain experts into decision-ready scores.
-- Built on Azure OpenAI with a contract-first backend (typed Pydantic contracts, CI enforcement, reproducible local assessment runs). Not yet in production — the engagement was measured on delivered correctness, not live traffic.
+- Owned the typed output contract and the correctness gate set: type baselines per file and rule, a complexity ratchet, mutation tests and required status checks.
+- Shipped 116 of 147 pull requests in ten weeks, median 3.0 hours to merge. Reviewed 52% of every pull request the rest of the team opened.
+- Ran agentic development at production scale, measured it, and tuned turn count over model tier.
 
 ### Data Scientist → DS Technical Lead
 **Appodeal**: [appodeal.com](https://appodeal.com) | León, Spain – Remote | *Dec 2024 – Jan 2026*
@@ -96,7 +89,7 @@ On-demand projects in semantic search, time series forecasting, and portfolio op
 | --- | --- |
 | Python, FastAPI, Pydantic, PostgreSQL, PyTorch, Transformers, Azure OpenAI / Azure / AKS, AWS/S3, Databricks, PySpark, Pandas, SQL, Docker, MLflow, Git, GitHub Actions, AI-augmented tools (Ollama, llama.cpp, Hermes Agent) | LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction & provenance, scoring engines, Deep Learning (attention, embeddings, transfer learning), Recommender Systems, NLP, RL / Bayesian Bandits, MLOps (parity, A/B, monitoring), Few-Shot / Active Learning, Ranking |
 | **Engineering Practices** | **Consulting & Soft Skills** |
-| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting delivery, stakeholder communication, correctness gatekeeping & requirements arbitration, mentoring, business impact focus, simplification / unification |
+| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting delivery, stakeholder communication, correctness gatekeeping, mentoring, business impact focus, simplification / unification |
 
 ---
 
