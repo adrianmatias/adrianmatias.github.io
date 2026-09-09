@@ -289,7 +289,7 @@
       recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks.
     </p>
       <p>
-      Current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the correctness-gatekeeper seat: 15% of the codebase written, 52% of peer PRs reviewed. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+      Current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the correctness-gatekeeper seat: ~15% of the backend codebase written, half of peer PRs reviewed. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
     </p>
     <div class="epigraph">
       Compression — removing what is not essential — is the deepest form of truth-telling in code and in thought.
@@ -316,20 +316,20 @@
         <span class="role-meta">Cavendish Professionals → PwC Advisory · León, Remote · May 2026 – Present</span>
       </summary>
       <div class="detail-body">
-        <p>Senior AI Engineer on the build of VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten-week engagement, four roles held in sequence — backend feature developer, contract &amp; schema owner, Mode-1 workbook lane owner, and finally correctness gatekeeper &amp; requirements arbiter. Wrote 15% of the codebase and reviewed 52% of every PR the team opened; the role drifted from writing features to deciding what counts as correct. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions, AKS.</p>
-        <div class="detail-label">Measured contribution — 10 weeks, 18 Jun – 28 Aug 2026</div>
+        <p>Senior AI Engineer on the build of VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten-week engagement, four roles held in sequence — backend feature developer, contract &amp; schema owner, assessment-workbook lane owner, and finally correctness gatekeeper &amp; requirements arbiter. Wrote roughly one line in seven of the codebase and reviewed half of all PRs the team opened; the role drifted from writing features to deciding what counts as correct. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions, AKS.</p>
+        <div class="detail-label">Contribution — 10 weeks, Jun–Aug 2026</div>
         <ul>
-          <li><strong>147 PRs authored, 116 merged</strong> (79% of what opened; 139 in the main repo, 8 in CSX). Second-most of 6 by PR volume against a 366-PR staff counterpart — 139 vs 366 as a peer pair, not a hierarchy.</li>
-          <li><strong>267 of 509 peer PRs reviewed</strong> — 52% of everything the team opened; 486 review verdicts (39% of all review activity), 161 of them formal request-changes that blocked a merge until fixed. Review traffic with the staff counterpart is symmetric (212/204): a pair, not a seniority gradient.</li>
-          <li><strong>150 of 994 commits on origin/main — 15% of the codebase</strong>, plus 46 of 139 PRs taken to decision with no outside review: the backend carried correctness alone where the team had no second pair of eyes.</li>
-          <li><strong>Median 3.0h open→merge, p90 3,775 lines, largest 20,834</strong> — kept high-review-throughput and short cycle time at once (92% of merges under 24h) on a contract-and-plumbing-heavy codebase.</li>
-          <li><strong>84 Jira items assigned / 74 raised</strong> (61 completed, 41 owned by others after raising) across typed response envelopes, provenance gates, badge and rollback lane separation, the bus_reg contract tree, workbook parse / vendor match / averaging / rollup, and the CI defect-census and decision-ticket gates (PRs 21, 44, 70, 72; 191, 249, 253, 270; 278, 315, 325, 361, 366; 597, 608, 630, 632, 634).</li>
-          <li><strong>Enforcement built to outlive the engagement</strong>: four artifacts move correctness out of individual heads into gates that fail without the author — the gate set, the bus_reg contract tree, the STE and thinness gates, and 161 request-change verdicts. Outranks the 116 merged PRs: whoever inherits the repository inherits the enforcement.</li>
+          <li><strong>Backend surface ownership</strong> — roughly one line in seven of the production codebase, across ingestion, extraction, scoring, and aggregation; carried half of all peer review as the engagement's correctness gate.</li>
+          <li><strong>Contract-first architecture</strong> — typed contracts (Pydantic) as the single source of truth end-to-end, CI gates that fail on wire drift, versioned schema lanes for parallel change, and a local end-to-end harness that makes assessment runs reproducible outside the deployed stack.</li>
+          <li><strong>Evidence grounding &amp; provenance</strong> — document-level provenance so every extracted value traces to cited source; validated scoring paths for weighting defects (caught and fixed a headline vendor score that ignored framework dimension weights).</li>
+          <li><strong>Correctness gatekeeping at pair strength</strong> — formal change-request authority that blocked merges until fixed; review traffic with the senior counterpart symmetric — a working pair, not a seniority gradient; load-bearing scoring and framework defects caught pre-merge.</li>
+          <li><strong>Requirements arbitration</strong> — in the engagement's second half, the arbiter of what counts as correct: raised the cross-cutting defects and requirements that others then owned to completion.</li>
+          <li><strong>Enforcement that outlives the engagement</strong> — correctness gates, machine-readable requirement contracts, and review standards now live in the repository's CI: whoever inherits it inherits the enforcement, no original author required.</li>
         </ul>
         <div class="detail-label">What VET is</div>
         <ul>
-          <li>AI-assisted vendor evaluation for contractual, binding decisions: raw submissions and vendor documentation grounded into cited, auditable evidence per requirement; heterogeneous data aggregated by domain experts; scoring paths validated for weighting defects (e.g. a headline vendor score that ignored framework dimension weights — diagnosed and fixed).</li>
-          <li>Contract-first engineering: Pydantic as single source of truth, CI gates that fail on wire drift (camelCase/snake_case), schema-lane separation (badge / rollback), and a local end-to-end harness so assessment runs are reproducible outside the deployed stack.</li>
+          <li>AI-assisted vendor evaluation for contractual, binding decisions: vendor submissions and documentation grounded into cited, auditable evidence per requirement; heterogeneous data aggregated by domain experts into decision-ready scores.</li>
+          <li>Built on Azure OpenAI with a contract-first backend (typed Pydantic contracts, CI enforcement, reproducible local assessment runs). Not yet in production — the engagement was measured on delivered correctness, not live traffic.</li>
         </ul>
       </div>
     </details>
@@ -498,7 +498,7 @@
       </div>
       <div class="skill-block">
         <h4>Consulting &amp; soft skills</h4>
-        <p>Multi-client consulting delivery, stakeholder communication, correctness gatekeeping (486 review verdicts, 161 request-changes), mentoring, business impact focus, simplification / unification</p>
+        <p>Multi-client consulting delivery, stakeholder communication, correctness gatekeeping &amp; requirements arbitration, mentoring, business impact focus, simplification / unification</p>
       </div>
     </div>
   </section>

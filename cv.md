@@ -7,7 +7,7 @@ aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](htt
 
 ## PROFILE
 
-Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks — with current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the correctness-gatekeeper seat: 15% of the codebase written, 52% of peer PRs reviewed. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks — with current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the correctness-gatekeeper seat: ~15% of the backend codebase written, half of peer PRs reviewed. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
 
 ---
 
@@ -16,19 +16,19 @@ Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning 
 ### Senior AI Engineer
 **Cavendish Professionals → PwC Advisory (long-term contract)** | León, Spain – Remote | *May 2026 – Present*
 
-Senior AI Engineer on the build of VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten-week engagement, four roles held in sequence — backend feature developer, contract & schema owner, Mode-1 workbook lane owner, and finally correctness gatekeeper & requirements arbiter. Wrote 15% of the codebase and reviewed 52% of every PR the team opened; the role drifted from writing features to deciding what counts as correct. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; deployed on internal AKS.
+Senior AI Engineer on the build of VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten-week engagement, four roles held in sequence — backend feature developer, contract & schema owner, assessment-workbook lane owner, and finally correctness gatekeeper & requirements arbiter. Wrote roughly one line in seven of the codebase and reviewed half of all PRs the team opened; the role drifted from writing features to deciding what counts as correct. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; deployed on internal AKS.
 
-**Measured contribution — 10 weeks, 18 Jun – 28 Aug 2026**
-- **147 PRs authored, 116 merged** (79% of what opened; 139 in the main repo, 8 in CSX). Second-most of 6 by PR volume against a 366-PR staff counterpart — 139 vs 366 as a peer pair, not a hierarchy.
-- **267 of 509 peer PRs reviewed** — 52% of everything the team opened; 486 review verdicts (39% of all review activity), 161 of them formal request-changes that blocked a merge until fixed. Review traffic with the staff counterpart is symmetric (212/204): a pair, not a seniority gradient.
-- **150 of 994 commits on origin/main — 15% of the codebase**, plus 46 of 139 PRs taken to decision with no outside review: the backend carried correctness alone where the team had no second pair of eyes.
-- **Median 3.0h open→merge, p90 3,775 lines, largest 20,834** — kept high-review-throughput and short cycle time at once (92% of merges under 24h) on a contract-and-plumbing-heavy codebase.
-- **84 Jira items assigned / 74 raised** (61 completed, 41 owned by others after raising) across typed response envelopes, provenance gates, badge and rollback lane separation, the bus_reg contract tree, workbook parse / vendor match / averaging / rollup, and the CI defect-census and decision-ticket gates.
-- **Enforcement built to outlive the engagement**: gate set, bus_reg contract tree, STE and thinness gates, and 161 request-change verdicts move correctness out of individual heads into gates that fail without the author — whoever inherits the repository inherits the enforcement.
+**Contribution — 10 weeks, Jun–Aug 2026**
+- **Backend surface ownership** — roughly one line in seven of the production codebase, across ingestion, extraction, scoring, and aggregation; carried half of all peer review as the engagement's correctness gate.
+- **Contract-first architecture** — typed contracts (Pydantic) as the single source of truth end-to-end, CI gates that fail on wire drift, versioned schema lanes for parallel change, and a local end-to-end harness that makes assessment runs reproducible outside the deployed stack.
+- **Evidence grounding & provenance** — document-level provenance so every extracted value traces to cited source; validated scoring paths for weighting defects (caught and fixed a headline vendor score that ignored framework dimension weights).
+- **Correctness gatekeeping at pair strength** — formal change-request authority that blocked merges until fixed; review traffic with the senior counterpart symmetric — a working pair, not a seniority gradient; load-bearing scoring and framework defects caught pre-merge.
+- **Requirements arbitration** — in the engagement's second half, the arbiter of what counts as correct: raised the cross-cutting defects and requirements that others then owned to completion.
+- **Enforcement that outlives the engagement** — correctness gates, machine-readable requirement contracts, and review standards now live in the repository's CI: whoever inherits it inherits the enforcement, no original author required.
 
 **What VET is**
-- AI-assisted vendor evaluation for contractual, binding decisions: raw submissions and vendor documentation grounded into cited, auditable evidence per requirement; heterogeneous data aggregated by domain experts; scoring paths validated for weighting defects (e.g. a headline vendor score that ignored framework dimension weights — diagnosed and fixed).
-- Contract-first engineering: Pydantic as single source of truth, CI gates that fail on wire drift (camelCase/snake_case), schema-lane separation (badge / rollback), and a local end-to-end harness so assessment runs are reproducible outside the deployed stack.
+- AI-assisted vendor evaluation for contractual, binding decisions: vendor submissions and documentation grounded into cited, auditable evidence per requirement; heterogeneous data aggregated by domain experts into decision-ready scores.
+- Built on Azure OpenAI with a contract-first backend (typed Pydantic contracts, CI enforcement, reproducible local assessment runs). Not yet in production — the engagement was measured on delivered correctness, not live traffic.
 
 ### Data Scientist → DS Technical Lead
 **Appodeal**: [appodeal.com](https://appodeal.com) | León, Spain – Remote | *Dec 2024 – Jan 2026*
@@ -95,7 +95,7 @@ On-demand projects in semantic search, time series forecasting, and portfolio op
 | --- | --- |
 | Python, FastAPI, Pydantic, PostgreSQL, PyTorch, Transformers, Azure OpenAI / Azure / AKS, AWS/S3, Databricks, PySpark, Pandas, SQL, Docker, MLflow, Git, GitHub Actions, AI-augmented tools (Ollama, llama.cpp, Hermes Agent) | LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction & provenance, scoring engines, Deep Learning (attention, embeddings, transfer learning), Recommender Systems, NLP, RL / Bayesian Bandits, MLOps (parity, A/B, monitoring), Few-Shot / Active Learning, Ranking |
 | **Engineering Practices** | **Consulting & Soft Skills** |
-| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting delivery, stakeholder communication, correctness gatekeeping (486 review verdicts, 161 request-changes), mentoring, business impact focus, simplification / unification |
+| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting delivery, stakeholder communication, correctness gatekeeping & requirements arbitration, mentoring, business impact focus, simplification / unification |
 
 ---
 
