@@ -7,7 +7,7 @@ aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](htt
 
 ## PROFILE
 
-Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks — with current work in GenAI: document extraction, scoring engines, and LLM-driven platforms on Azure OpenAI (PwC Advisory via Cavendish). Owns design → deployment → monitoring across client engagements. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks — with current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the correctness-gatekeeper seat: 15% of the codebase written, 52% of peer PRs reviewed. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
 
 ---
 
@@ -16,14 +16,19 @@ Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning 
 ### Senior AI Engineer
 **Cavendish Professionals → PwC Advisory (long-term contract)** | León, Spain – Remote | *May 2026 – Present*
 
-Backend / analytic-engine engineer on a cross-timezone pod building an LLM-driven Vendor Evaluation Tool (VET) for PwC Advisory: ingest heterogeneous vendor submissions → extract → score → compare. Full-time engagement through Cavendish Professionals. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; deployed on internal AKS.
+Senior AI Engineer on the build of VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten-week engagement, four roles held in sequence — backend feature developer, contract & schema owner, Mode-1 workbook lane owner, and finally correctness gatekeeper & requirements arbiter. Wrote 15% of the codebase and reviewed 52% of every PR the team opened; the role drifted from writing features to deciding what counts as correct. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; deployed on internal AKS.
 
-**Key Achievements**
-- Shipped typed FE/BE response contract (Pydantic as source of truth) across a 3-PR arc, with a CI gate that fails on camelCase/snake_case wire drift — closing a recurring class of silent FE/BE integration bugs.
-- Made the backend the single source of truth for derived scores (out of raw LLM output); diagnosed and fixed a weighting defect where headline vendor score ignored framework dimension weights.
-- Delivered document-level provenance (every extracted value traces to source) and a local e2e test harness for reproducible assessment runs outside the deployed stack.
-- Ran a market-scan / vendor-crawl spike end-to-end to validate the generic LLM scoring path and surface the weighting defect.
-- Correctness reviewer on peers' PRs (load-bearing scoring/framework bugs caught pre-merge). Delivery: 16 authored PRs in ~3 weeks (11 merged).
+**Measured contribution — 10 weeks, 18 Jun – 28 Aug 2026**
+- **147 PRs authored, 116 merged** (79% of what opened; 139 in the main repo, 8 in CSX). Second-most of 6 by PR volume against a 366-PR staff counterpart — 139 vs 366 as a peer pair, not a hierarchy.
+- **267 of 509 peer PRs reviewed** — 52% of everything the team opened; 486 review verdicts (39% of all review activity), 161 of them formal request-changes that blocked a merge until fixed. Review traffic with the staff counterpart is symmetric (212/204): a pair, not a seniority gradient.
+- **150 of 994 commits on origin/main — 15% of the codebase**, plus 46 of 139 PRs taken to decision with no outside review: the backend carried correctness alone where the team had no second pair of eyes.
+- **Median 3.0h open→merge, p90 3,775 lines, largest 20,834** — kept high-review-throughput and short cycle time at once (92% of merges under 24h) on a contract-and-plumbing-heavy codebase.
+- **84 Jira items assigned / 74 raised** (61 completed, 41 owned by others after raising) across typed response envelopes, provenance gates, badge and rollback lane separation, the bus_reg contract tree, workbook parse / vendor match / averaging / rollup, and the CI defect-census and decision-ticket gates.
+- **Enforcement built to outlive the engagement**: gate set, bus_reg contract tree, STE and thinness gates, and 161 request-change verdicts move correctness out of individual heads into gates that fail without the author — whoever inherits the repository inherits the enforcement.
+
+**What VET is**
+- AI-assisted vendor evaluation for contractual, binding decisions: raw submissions and vendor documentation grounded into cited, auditable evidence per requirement; heterogeneous data aggregated by domain experts; scoring paths validated for weighting defects (e.g. a headline vendor score that ignored framework dimension weights — diagnosed and fixed).
+- Contract-first engineering: Pydantic as single source of truth, CI gates that fail on wire drift (camelCase/snake_case), schema-lane separation (badge / rollback), and a local end-to-end harness so assessment runs are reproducible outside the deployed stack.
 
 ### Data Scientist → DS Technical Lead
 **Appodeal**: [appodeal.com](https://appodeal.com) | León, Spain – Remote | *Dec 2024 – Jan 2026*
@@ -90,7 +95,7 @@ On-demand projects in semantic search, time series forecasting, and portfolio op
 | --- | --- |
 | Python, FastAPI, Pydantic, PostgreSQL, PyTorch, Transformers, Azure OpenAI / Azure / AKS, AWS/S3, Databricks, PySpark, Pandas, SQL, Docker, MLflow, Git, GitHub Actions, AI-augmented tools (Ollama, llama.cpp, Hermes Agent) | LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction & provenance, scoring engines, Deep Learning (attention, embeddings, transfer learning), Recommender Systems, NLP, RL / Bayesian Bandits, MLOps (parity, A/B, monitoring), Few-Shot / Active Learning, Ranking |
 | **Engineering Practices** | **Consulting & Soft Skills** |
-| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting delivery, stakeholder communication, PR correctness review, mentoring, business impact focus, simplification / unification |
+| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting delivery, stakeholder communication, correctness gatekeeping (486 review verdicts, 161 request-changes), mentoring, business impact focus, simplification / unification |
 
 ---
 
