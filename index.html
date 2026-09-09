@@ -289,7 +289,7 @@
       recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks.
     </p>
       <p>
-      Current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the correctness-gatekeeper seat: ~15% of the backend codebase written, half of peer PRs reviewed. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+      Current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the seat the team labeled backend architect &amp; correctness gatekeeper. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
     </p>
     <div class="epigraph">
       Compression — removing what is not essential — is the deepest form of truth-telling in code and in thought.
@@ -316,15 +316,17 @@
         <span class="role-meta">Cavendish Professionals → PwC Advisory · León, Remote · May 2026 – Present</span>
       </summary>
       <div class="detail-body">
-        <p>Senior AI Engineer on the build of VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten-week engagement, four roles held in sequence — backend feature developer, contract &amp; schema owner, assessment-workbook lane owner, and finally correctness gatekeeper &amp; requirements arbiter. Wrote roughly one line in seven of the codebase and reviewed half of all PRs the team opened; the role drifted from writing features to deciding what counts as correct. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions, AKS.</p>
-        <div class="detail-label">Contribution — 10 weeks, Jun–Aug 2026</div>
+        <p>Senior AI Engineer on VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten weeks, four seats held in sequence — backend feature developer, contract &amp; schema owner, assessment-workbook lane owner — finishing by deciding what counts as correct. The last seat carries the most weight per hour and the least visible output: when a budget review counts merged features, it also carries the least protection. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions, AKS.</p>
+        <div class="detail-label">Where I sat — the team's label, backed by the review record</div>
         <ul>
-          <li><strong>Backend surface ownership</strong> — roughly one line in seven of the production codebase, across ingestion, extraction, scoring, and aggregation; carried half of all peer review as the engagement's correctness gate.</li>
-          <li><strong>Contract-first architecture</strong> — typed contracts (Pydantic) as the single source of truth end-to-end, CI gates that fail on wire drift, versioned schema lanes for parallel change, and a local end-to-end harness that makes assessment runs reproducible outside the deployed stack.</li>
-          <li><strong>Evidence grounding &amp; provenance</strong> — document-level provenance so every extracted value traces to cited source; validated scoring paths for weighting defects (caught and fixed a headline vendor score that ignored framework dimension weights).</li>
-          <li><strong>Correctness gatekeeping at pair strength</strong> — formal change-request authority that blocked merges until fixed; review traffic with the senior counterpart symmetric — a working pair, not a seniority gradient; load-bearing scoring and framework defects caught pre-merge.</li>
-          <li><strong>Requirements arbitration</strong> — in the engagement's second half, the arbiter of what counts as correct: raised the cross-cutting defects and requirements that others then owned to completion.</li>
-          <li><strong>Enforcement that outlives the engagement</strong> — correctness gates, machine-readable requirement contracts, and review standards now live in the repository's CI: whoever inherits it inherits the enforcement, no original author required.</li>
+          <li><strong>Backend architect &amp; correctness gatekeeper</strong> — the label the team's own page gave the seat; the review record supports it without any narrative help.</li>
+          <li><strong>A pair, not a hierarchy</strong> — review traffic with the senior counterpart ran symmetric, 212 against 204; every hard call about transport, tenancy, provenance and lane separation settled between those two seats — and it settled toward less coupling.</li>
+          <li><strong>Carried correctness alone where needed</strong> — 46 of 139 pull requests reached a decision with no second pair of eyes: the honest edge of being the gate.</li>
+        </ul>
+        <div class="detail-label">The strongest thing</div>
+        <ul>
+          <li><strong>Made correctness executable instead of stating it</strong> — enforcement artifacts each move a belief out of one head into a place that fails without its author: the CI gate set, the machine-readable requirement contract tree, the schema-completeness gates, and formal request-change verdicts. That skill transfers to any team, and it outranks the merged-PR count.</li>
+          <li><strong>Built for the inheritor</strong> — the enforcement landed in the final two weeks of the ten-week engagement, so most of its value accrues to whoever inherits the repository — by design, not by accident.</li>
         </ul>
         <div class="detail-label">What VET is</div>
         <ul>

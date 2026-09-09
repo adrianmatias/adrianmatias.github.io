@@ -7,7 +7,7 @@ aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](htt
 
 ## PROFILE
 
-Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks — with current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the correctness-gatekeeper seat: ~15% of the backend codebase written, half of peer PRs reviewed. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks — with current work in GenAI: VET, PwC Advisory's LLM-driven vendor-evaluation platform (Azure OpenAI via Cavendish) — grounding raw vendor documentation into cited evidence, scoring engines, and contract-first pipelines. Held the seat the team labeled backend architect & correctness gatekeeper. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
 
 ---
 
@@ -16,15 +16,16 @@ Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning 
 ### Senior AI Engineer
 **Cavendish Professionals → PwC Advisory (long-term contract)** | León, Spain – Remote | *May 2026 – Present*
 
-Senior AI Engineer on the build of VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten-week engagement, four roles held in sequence — backend feature developer, contract & schema owner, assessment-workbook lane owner, and finally correctness gatekeeper & requirements arbiter. Wrote roughly one line in seven of the codebase and reviewed half of all PRs the team opened; the role drifted from writing features to deciding what counts as correct. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; deployed on internal AKS.
+Senior AI Engineer on VET (Vendor Evaluation Tool), an LLM-driven platform PwC Advisory uses to evaluate vendors with contractually binding outcomes: ingest heterogeneous vendor submissions and raw documentation → ground extraction in cited evidence → score → compare. Ten weeks, four seats held in sequence — backend feature developer, contract & schema owner, assessment-workbook lane owner — finishing by deciding what counts as correct. The last seat carries the most weight per hour and the least visible output: when a budget review counts merged features, it also carries the least protection. Stack: Python, FastAPI, Pydantic, PostgreSQL, Azure OpenAI, Next.js, GitHub Actions; deployed on internal AKS.
 
-**Contribution — 10 weeks, Jun–Aug 2026**
-- **Backend surface ownership** — roughly one line in seven of the production codebase, across ingestion, extraction, scoring, and aggregation; carried half of all peer review as the engagement's correctness gate.
-- **Contract-first architecture** — typed contracts (Pydantic) as the single source of truth end-to-end, CI gates that fail on wire drift, versioned schema lanes for parallel change, and a local end-to-end harness that makes assessment runs reproducible outside the deployed stack.
-- **Evidence grounding & provenance** — document-level provenance so every extracted value traces to cited source; validated scoring paths for weighting defects (caught and fixed a headline vendor score that ignored framework dimension weights).
-- **Correctness gatekeeping at pair strength** — formal change-request authority that blocked merges until fixed; review traffic with the senior counterpart symmetric — a working pair, not a seniority gradient; load-bearing scoring and framework defects caught pre-merge.
-- **Requirements arbitration** — in the engagement's second half, the arbiter of what counts as correct: raised the cross-cutting defects and requirements that others then owned to completion.
-- **Enforcement that outlives the engagement** — correctness gates, machine-readable requirement contracts, and review standards now live in the repository's CI: whoever inherits it inherits the enforcement, no original author required.
+**Where I sat — the team's label, backed by the review record**
+- **Backend architect & correctness gatekeeper** — the label the team's own page gave the seat; the review record supports it without any narrative help.
+- **A pair, not a hierarchy** — review traffic with the senior counterpart ran symmetric, 212 against 204; every hard call about transport, tenancy, provenance and lane separation settled between those two seats — and it settled toward less coupling.
+- **Carried correctness alone where needed** — 46 of 139 pull requests reached a decision with no second pair of eyes: the honest edge of being the gate.
+
+**The strongest thing**
+- **Made correctness executable instead of stating it** — enforcement artifacts each move a belief out of one head into a place that fails without its author: the CI gate set, the machine-readable requirement contract tree, the schema-completeness gates, and formal request-change verdicts. That skill transfers to any team, and it outranks the merged-PR count.
+- **Built for the inheritor** — the enforcement landed in the final two weeks of the ten-week engagement, so most of its value accrues to whoever inherits the repository — by design, not by accident.
 
 **What VET is**
 - AI-assisted vendor evaluation for contractual, binding decisions: vendor submissions and documentation grounded into cited, auditable evidence per requirement; heterogeneous data aggregated by domain experts into decision-ready scores.
