@@ -108,6 +108,8 @@ On-demand projects in semantic search, time series forecasting, and portfolio op
 
 ## SELECTED PROJECTS
 
+- **opo — AI-compiled exam preparation**: [opo.taoaieng.io](https://opo.taoaieng.io/)  
+  Live paid product for Spanish public-sector exams: official law and past papers compiled once into a cited corpus of 28 topic pages and 660 tagged official items, then a 40-item diagnostic allocates the student's hours by official weight × mastery deficit. Six proven CI gates block release; no claim ships without a citation.
 - **not the tao with adrian matias**: [youtube.com/@notTheTaoWithAdrianMatias](https://youtube.com/@notTheTaoWithAdrianMatias)  
   Podcast exploring simplicity, consciousness, reality, machine learning, coding, sovereign AI.
 - **RAG Blog System**: [github.com/adrianmatias/ml-sandbox/tree/master/ragblog](https://github.com/adrianmatias/ml-sandbox/tree/master/ragblog)  
