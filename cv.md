@@ -69,11 +69,16 @@ Researched, implemented, and maintained text analytics, NLU, and semantic search
 
 #### Earlier Roles
 
-| | |
-|---|---|
-| **Numbrs** *Aug 2020 – Oct 2021*<br>Extended Deep Learning / Active Learning for transaction processing; scaled classifier across countries with GDPR-compliant pipelines. | **IEBS School** *Oct 2019 – Oct 2021*<br>Webinars and masterclasses on real-time Big Data, AI, and ML applications. |
-| **Stratio BD** *Aug 2019 – Aug 2020*<br>Propensity/churn on Spark; BERT+graph email segmentation; multi-source weather DB (Elasticsearch/Flask). | **DOCOMO DIGITAL** *Apr 2017 – Aug 2019*<br>Led fraud detection (99.8% specificity, &lt;50 ms) and default-payment filtering; mentored juniors. |
-| **Digilant** *Jun 2015 – Apr 2017*<br>Redesigned Consumer Persona ML model; Game Theory attribution prototype; co-directed Master's thesis. | **2007–2015**<br>Civil/tunnel engineering; university teaching: Math, Physics, Chemistry. |
+| Company | Role | Dates | |
+|---|---|---|---|
+| **Numbrs** | <!--TODO role--> | *Aug 2020 – Oct 2021* | Extended Deep Learning / Active Learning for transaction processing; scaled classifier across countries with GDPR-compliant pipelines. |
+| **IEBS School** | <!--TODO role--> | *Oct 2019 – Oct 2021* | Webinars and masterclasses on real-time Big Data, AI, and ML applications. |
+| **Stratio BD** | <!--TODO role--> | *Aug 2019 – Aug 2020* | Propensity/churn on Spark; BERT+graph email segmentation; multi-source weather DB (Elasticsearch/Flask). |
+| **DOCOMO DIGITAL** | <!--TODO role--> | *Apr 2017 – Aug 2019* | Led fraud detection (99.8% specificity, &lt;50 ms) and default-payment filtering; mentored juniors. |
+| **Digilant** | <!--TODO role--> | *Jun 2015 – Apr 2017* | Redesigned Consumer Persona ML model; Game Theory attribution prototype; co-directed Master's thesis. |
+| **2007–2015** | <!--TODO role--> | | Civil/tunnel engineering; university teaching: Math, Physics, Chemistry. |
+
+<!-- Role titles pending from LinkedIn for: Numbrs, IEBS School, Stratio BD, DOCOMO DIGITAL, Digilant, 2007–2015 -->
 
 #### Freelance
 
