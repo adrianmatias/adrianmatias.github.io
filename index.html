@@ -316,12 +316,14 @@
         <span class="role-meta">Cavendish Professionals → PwC Contractor · León, Remote · May 2026 – Present</span>
       </summary>
       <div class="detail-body">
-        <p>Senior engineer on an LLM-as-judge product that scores software vendors. Created the human ground-truth lane alone at creation: 9 modules, 2,765 lines – domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up, which reconcile human evaluator scores against model scores.</p>
+        <p>Senior engineer on an LLM-as-judge product that scores software vendors. Built the human ground-truth lane alone — domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up — the lane that reconciles human evaluator scores against model scores and makes the judge's accuracy checkable against ground truth.</p>
         <div class="detail-label">Key achievements</div>
         <ul>
-          <li>Owned the typed output contract and the correctness gate set: type baselines per file and rule, a complexity ratchet, mutation tests and required status checks.</li>
-          <li>Shipped 116 of 147 pull requests in ten weeks, median 3.0 hours to merge. Reviewed 52% of every pull request the rest of the team opened.</li>
-          <li>Ran agentic development at production scale, measured it, and tuned turn count over model tier.</li>
+          <li>Contributed to every component of the product architecture in a team of three senior AI engineers, a PM and the associate product owner.</li>
+          <li>Introduced and owned schema-driven, domain-driven and spec-driven development: business requirements kept as a contract artifact that agentic development builds against.</li>
+          <li>Owned the typed output contract and the correctness gate set — type baselines per file and rule, a complexity ratchet, mutation tests, required status checks — and designed and managed the end-to-end validation workflows behind them.</li>
+          <li>Created and owned full epics end to end, from business requirement to shipped increment.</li>
+          <li>Ran agentic development at production scale as a measured practice: cost and turn discipline tuned per model tier.</li>
         </ul>
       </div>
     </details>
@@ -337,9 +339,9 @@
         <div class="detail-label">Key achievements</div>
         <ul>
           <li>Unified modeling across targets, advertisers, and platforms via attention/transformer architecture, increasing end KPI.</li>
-          <li>Novel cold-start techniques (custom PyTorch + transfer learning) for advertiser onboarding.</li>
-          <li>Resolved parity mismatches and calibration gaps; productionized parity workflows with unit tests in Databricks.</li>
-          <li>Transfer-learning user embeddings with performance parity at orders-of-magnitude cost savings.</li>
+          <li>Design and deploy cold start for advertiser onboarding in two angles: transfer learning through an affinity tower trained on wider set of interactions and cold advertiser masking validated on held-out cold entities. New advertisers bid from day one from a unified model, with eCPI better than curated whitelists for inventory and demand segments. Custom PyTorch</li>
+          <li>Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until models received identical inputs offline and online and their outputs matched through a complex inference server; productionized parity workflows with unit tests in Databricks.</li>
+          <li>Designed and proposed the user embedding system built from users' interactions with apps; realized with transfer learning at performance parity and orders-of-magnitude cost savings.</li>
         </ul>
       </div>
     </details>

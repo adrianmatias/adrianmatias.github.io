@@ -16,13 +16,15 @@ Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning 
 ### Senior AI Engineer
 **Cavendish Professionals → PwC Contractor**  [cavendish-professionals](https://www.linkedin.com/company/cavendish-professionals/) | León, Spain – Remote | *May 2026 – Present*
 
-Senior engineer on an LLM-as-judge product that scores software vendors. Created the human ground-truth lane alone at creation: 9 modules, 2,765 lines – domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up, which reconcile human evaluator scores against model scores.
+Senior engineer on an LLM-as-judge product that scores software vendors. Built the human ground-truth lane alone — domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up — the lane that reconciles human evaluator scores against model scores and makes the judge's accuracy checkable against ground truth.
 
 **Key Achievements**
 
-- Owned the typed output contract and the correctness gate set: type baselines per file and rule, a complexity ratchet, mutation tests and required status checks.
-- Shipped 116 of 147 pull requests in ten weeks, median 3.0 hours to merge. Reviewed 52% of every pull request the rest of the team opened.
-- Ran agentic development at production scale, measured it, and tuned turn count over model tier.
+- Contributed to every component of the product architecture in a team of three senior AI engineers, a PM and the associate product owner.
+- Introduced and owned schema-driven, domain-driven and spec-driven development: business requirements kept as a contract artifact that agentic development builds against.
+- Owned the typed output contract and the correctness gate set — type baselines per file and rule, a complexity ratchet, mutation tests, required status checks — and designed and managed the end-to-end validation workflows behind them.
+- Created and owned full epics end to end, from business requirement to shipped increment.
+- Ran agentic development at production scale as a measured practice: cost and turn discipline tuned per model tier.
 
 ### Data Scientist → DS Technical Lead
 **Appodeal**: [appodeal.com](https://appodeal.com) | León, Spain – Remote | *Dec 2024 – Jan 2026*
@@ -31,9 +33,9 @@ Developed install prediction models for mobile user acquisition: cold-start, tra
 
 **Key Achievements**
 - Unified modeling across targets, advertisers, and platforms via attention/transformer architecture, increasing end KPI.
-- Enabled seamless advertiser onboarding through novel cold-start techniques (custom PyTorch + transfer learning).
-- Resolved parity mismatches and calibration gaps; productionized parity workflows with unit tests and decoupling in Databricks.
-- Transfer-learning user embeddings achieving performance parity with orders-of-magnitude cost savings.
+- Design and deploy cold start for advertiser onboarding in two angles: transfer learning through an affinity tower trained on wider set of interactions and cold advertiser masking validated on held-out cold entities. New advertisers bid from day one from a unified model, with eCPI better than curated whitelists for inventory and demand segments. Custom PyTorch
+- Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until models received identical inputs offline and online and their outputs matched through a complex inference server; productionized parity workflows with unit tests in Databricks.
+- Designed and proposed the user embedding system built from users' interactions with apps; realized with transfer learning at performance parity and orders-of-magnitude cost savings.
 
 <!-- pagebreak -->
 
