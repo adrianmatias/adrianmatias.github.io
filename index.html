@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Adrian Matias — Senior AI Engineer. GenAI, ML production, consulting. León, Spain · Remote.">
+<meta name="description" content="Adrian Matias, Senior AI Engineer and ML engineer: production ML, adtech, GenAI evaluation. León, Spain, remote.">
 <meta name="theme-color" content="#0a0a0a">
 <title>Adrian Matias — Senior AI Engineer</title>
-<link rel="canonical" href="https://adrianmatias.github.io/">
+<link rel="canonical" href="https://taoaieng.io/">
 <style>
   :root {
     --bg: #0a0a0a;
@@ -264,12 +264,12 @@
   <header class="hero">
     <div class="eyebrow">Senior AI Engineer · León, Spain · Remote</div>
     <h1>Adrian Matias</h1>
-    <p class="subtitle">GenAI production · ML systems · consulting delivery</p>
+    <p class="subtitle">Production ML · adtech · GenAI evaluation</p>
     <div class="chips">
       <span class="chip">LLMs / RAG / agents</span>
       <span class="chip">PyTorch / transformers</span>
       <span class="chip">FastAPI · Azure · Databricks</span>
-      <span class="chip">12 years</span>
+      <span class="chip">11 years</span>
     </div>
     <div class="links">
       <a href="mailto:aadrian.mat@gmail.com">aadrian.mat@gmail.com</a>
@@ -284,16 +284,13 @@
   <section id="about">
     <h2>About</h2>
     <p class="lead">
-      Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production.
-      Deep roots in core DS — ad-tech ranking &amp; user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack),
-      recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks.
+      Data scientist and ML engineer with 11 years of experience taking machine learning from problem framing to production. In adtech: install-prediction models behind mobile user-acquisition bidding (Appodeal), ad ranking and Bayesian bandits on the DSP side (Chartboost), persona modelling and attribution for programmatic ads (Digilant). Also fraud detection, NLP (RavenPack), recommender systems and large-scale experimentation on Spark and Databricks.
     </p>
       <p>
-      Current work in GenAI: LLM-as-judge product that scores software vendors, grounding raw vendor documentation into cited evidence, scoring engines. Owned the typed output contract and the correctness gate set. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+      Most recent GenAI work: an LLM-as-judge product that scores software vendors from their raw documentation, with cited evidence. Owned the typed output contract and the correctness gates, and built the human ground-truth lane that checks the judge against expert scores.
     </p>
     <div class="epigraph">
-      Compression — removing what is not essential — is the deepest form of truth-telling in code and in thought.
-      <cite>— working principle</cite>
+      Working principle: remove what is not essential.
     </div>
     <div class="btn-row">
       <a class="btn" href="cv.pdf">Download PDF CV</a>
@@ -313,17 +310,17 @@
       <summary>
         <span class="role-title">Senior AI Engineer</span>
         <span class="hint">detail</span>
-        <span class="role-meta">Cavendish Professionals → PwC Contractor · León, Remote · May 2026 – Present</span>
+        <span class="role-meta">Cavendish Professionals → PwC Contractor · León, Remote · May 2026 – Sep 2026</span>
       </summary>
       <div class="detail-body">
-        <p>Senior engineer on an LLM-as-judge product that scores software vendors. Built the human ground-truth lane alone — domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up — the lane that reconciles human evaluator scores against model scores and makes the judge's accuracy checkable against ground truth.</p>
+        <p>Senior engineer on an LLM-as-judge product that scores software vendors. Built the human ground-truth lane alone: domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up. It reconciles human evaluator scores with model scores, so the judge's accuracy can be checked against ground truth.</p>
         <div class="detail-label">Key achievements</div>
         <ul>
           <li>Contributed to every component of the product architecture in a team of three senior AI engineers, a PM and the associate product owner.</li>
           <li>Introduced and owned schema-driven, domain-driven and spec-driven development: business requirements kept as a contract artifact that agentic development builds against.</li>
-          <li>Owned the typed output contract and the correctness gate set — type baselines per file and rule, a complexity ratchet, mutation tests, required status checks — and designed and managed the end-to-end validation workflows behind them.</li>
+          <li>Owned the typed output contract and the correctness gate set (type baselines per file and rule, a complexity ratchet, mutation tests, required status checks), and designed and managed the end-to-end validation workflows behind them.</li>
           <li>Created and owned full epics end to end, from business requirement to shipped increment.</li>
-          <li>Ran agentic development at production scale as a measured practice: cost and turn discipline tuned per model tier.</li>
+          <li>Ran agentic coding on the production codebase as a measured practice: cost and turns, tuned per model tier.</li>
         </ul>
       </div>
     </details>
@@ -335,13 +332,13 @@
         <span class="role-meta">Appodeal · León, Remote · Dec 2024 – Jan 2026</span>
       </summary>
       <div class="detail-body">
-        <p>Install prediction for mobile user acquisition: cold-start, transformers, user embeddings, transfer learning, MLOps, production pipelines, parity resolution, experimentation, monitoring. Progressed toward technical leadership on ownership and strategic perspective.</p>
+        <p>Install prediction for mobile user acquisition: cold start, transformers, user embeddings, transfer learning, MLOps, production pipelines, parity, experimentation, monitoring. Promoted to DS technical lead in December 2025.</p>
         <div class="detail-label">Key achievements</div>
         <ul>
-          <li>Unified modeling across targets, advertisers, and platforms via attention/transformer architecture, increasing end KPI.</li>
-          <li>Design and deploy cold start for advertiser onboarding in two angles: transfer learning through an affinity tower trained on wider set of interactions and cold advertiser masking validated on held-out cold entities. New advertisers bid from day one from a unified model, with eCPI better than curated whitelists for inventory and demand segments. Custom PyTorch</li>
-          <li>Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until models received identical inputs offline and online and their outputs matched through a complex inference server; productionized parity workflows with unit tests in Databricks.</li>
-          <li>Designed and proposed the user embedding system built from users' interactions with apps; realized with transfer learning at performance parity and orders-of-magnitude cost savings.</li>
+          <li>Replaced separate per-advertiser and per-platform models with one attention model per target, with segment identity as a feature. Launched on 5% of bid requests; later it covered all Android CPI, then iOS.</li>
+          <li>Designed and deployed cold start for advertiser onboarding in two ways: transfer learning through an affinity tower trained on a wider set of interactions, and cold-advertiser masking validated on held-out cold entities. New advertisers bid from day one from the shared model, with eCPI better than curated whitelists for inventory and demand segments. Custom PyTorch.</li>
+          <li>Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until the models received identical inputs offline and online and their outputs matched through the inference server; made parity a workflow with unit tests in Databricks.</li>
+          <li>Proposed and designed the user embedding system, built from users' interactions with apps; delivered with transfer learning at performance parity and orders-of-magnitude lower cost.</li>
         </ul>
       </div>
     </details>
@@ -356,9 +353,9 @@
         <p>End-to-end ML for international clients: scope review, stakeholder alignment, model productivization.</p>
         <div class="detail-label">Key contributions</div>
         <ul>
-          <li>Led rapid turnaround of underperforming client ML system (utility fraud detection &amp; ranking): surgical plan, restored accuracy/efficiency, recovered client satisfaction.</li>
-          <li>Surfaced critical issues in data ingestion and feature-engineering pipelines.</li>
-          <li>Real-time credit card fraud classifier (classical ML + deep VAE). Open: github.com/adrianmatias/ml-sandbox/tree/master/tx_class</li>
+          <li>Led the turnaround of an underperforming client ML system for utility fraud detection and ranking: found the architectural faults, fixed them, and restored accuracy, efficiency and client satisfaction.</li>
+          <li>Found critical faults in the data-ingestion and feature-engineering pipelines.</li>
+          <li>Led development of a real-time credit card fraud classifier combining scalable classical ML with a deep VAE. Open version: <a href="https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class" rel="noopener">ml-sandbox/tx_class</a></li>
         </ul>
       </div>
     </details>
@@ -370,12 +367,12 @@
         <span class="role-meta">Chartboost · León, Remote · Jun 2023 – Jun 2024</span>
       </summary>
       <div class="detail-body">
-        <p>Ad ranking and reinforcement learning for in-app game advertising; DSP performance via large-scale experimentation.</p>
+        <p>Ad ranking and reinforcement learning for in-app game advertising; improved DSP performance through large-scale experiments.</p>
         <div class="detail-label">Key achievements</div>
         <ul>
-          <li>Bayesian Bandit RL system with policy evaluation tools; tailored online/offline evaluation frameworks.</li>
-          <li>Two-Towers neural ranking from recommender-systems patterns.</li>
-          <li>Post-mortems on adversarial DSP dynamics and model feedback loops.</li>
+          <li>Evolved and monitored a Bayesian-bandit RL system with policy-evaluation tools; designed online/offline evaluation frameworks for it.</li>
+          <li>Built a two-tower neural ranking model for ads.</li>
+          <li>Ran post-mortems on adversarial DSP dynamics and model feedback loops.</li>
         </ul>
       </div>
     </details>
@@ -433,7 +430,7 @@
           <span class="card-title">The Mirror</span>
           <span class="card-meta">github.com/adrianmatias/the-mirror</span>
         </div>
-        <p>Knowledge repository based on llm-wiki for a personalized assistant and insight layer for agentic AI. Persistent synthesis across sessions.</p>
+        <p>Knowledge repository built on llm-wiki for a personal AI assistant: notes and synthesis that persist across sessions.</p>
         <div class="tags"><span class="tag">RAG</span><span class="tag">LLM wiki</span><span class="tag">Agents</span><span class="tag">Obsidian</span></div>
       </a>
 
@@ -442,7 +439,7 @@
           <span class="card-title">RAG Blog System</span>
           <span class="card-meta">ml-sandbox/ragblog</span>
         </div>
-        <p>Retrieval-augmented generation pipeline integrating LLMs, vector embeddings, and web crawling. Local-first path on consumer GPUs.</p>
+        <p>RAG over a personal blog archive with local open models: web crawling, vector embeddings and LLMs, evaluated with Ragas using separate generator and judge models. Local-first, on consumer GPUs.</p>
         <div class="tags"><span class="tag">RAG</span><span class="tag">Embeddings</span><span class="tag">Local AI</span><span class="tag">Python</span></div>
       </a>
 
@@ -460,7 +457,7 @@
           <span class="card-title">The Real MLE Challenge</span>
           <span class="card-meta">production ML refactor</span>
         </div>
-        <p>Dev-to-production refactor: inference pipelines, price-prediction API, Docker. Clean structure, reproducibility, MLOps habits.</p>
+        <p>Dev-to-production refactor: inference pipelines, a price-prediction API, Docker, reproducible structure.</p>
         <div class="tags"><span class="tag">MLOps</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">PyTorch</span></div>
       </a>
 
@@ -478,7 +475,7 @@
           <span class="card-title">not the tao — Podcast</span>
           <span class="card-meta">YouTube</span>
         </div>
-        <p>Episodes on simplicity, consciousness, reality, machine learning, coding, and sovereign AI. No guests, no ads, no filler.</p>
+        <p>Episodes on simplicity, consciousness, reality, machine learning, coding and sovereign AI. No guests, no ads.</p>
         <div class="tags"><span class="tag">Podcast</span><span class="tag">ML</span><span class="tag">Philosophy</span></div>
       </a>
     </div>
@@ -493,7 +490,7 @@
       </div>
       <div class="skill-block">
         <h4>Machine learning &amp; GenAI</h4>
-        <p>LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction &amp; provenance, scoring engines, deep learning (attention, embeddings, transfer learning), recommender systems, NLP, RL / Bayesian bandits, MLOps, few-shot / active learning, ranking</p>
+        <p>LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction &amp; provenance, scoring engines, deep learning (attention, embeddings, transfer learning), recommender systems, NLP, RL / Bayesian bandits, MLOps, few-shot / active learning, adtech ranking and install prediction for bidding (DSP, mobile UA)</p>
       </div>
       <div class="skill-block">
         <h4>Engineering practices</h4>
@@ -501,7 +498,7 @@
       </div>
       <div class="skill-block">
         <h4>Consulting &amp; soft skills</h4>
-        <p>Multi-client consulting delivery, stakeholder communication, correctness gatekeeping, mentoring, business impact focus, simplification / unification</p>
+        <p>Multi-client consulting, stakeholder communication, mentoring, correctness gatekeeping, simplification</p>
       </div>
     </div>
   </section>
@@ -519,7 +516,7 @@
   <section id="contact">
     <h2>Contact</h2>
     <p class="lead">
-      Open to Senior AI Engineer / AI Consultant roles — GenAI production, multi-client delivery, internal labs.
+      Open to senior and principal roles in ML engineering, data science and AI engineering.
       Remote from León, Spain.
     </p>
     <div class="btn-row">
@@ -531,7 +528,7 @@
   </section>
 
   <footer>
-    <p>adrianmatias.github.io · source of truth with the PDF CV</p>
+    <p>taoaieng.io · web CV and downloadable PDF</p>
     <p><a href="mailto:aadrian.mat@gmail.com">aadrian.mat@gmail.com</a> · León, Spain</p>
   </footer>
 </div>

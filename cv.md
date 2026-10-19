@@ -1,41 +1,41 @@
 # ADRIAN MATIAS
 
-aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](https://linkedin.com/in/adrianmatiasdiez) | [github.com/adrianmatias](https://github.com/adrianmatias) | [x.com/adrian2mat](https://x.com/adrian2mat) | [adrianmatias.github.io](https://adrianmatias.github.io/)
-*Calle Miguel Cordero del Campillo 9, 24007 León – Spain*
+aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](https://linkedin.com/in/adrianmatiasdiez) | [github.com/adrianmatias](https://github.com/adrianmatias) | [x.com/adrian2mat](https://x.com/adrian2mat) | [taoaieng.io](https://taoaieng.io/)
+*León, Spain*
 
 ---
 
 ## PROFILE
 
-Data Scientist / ML Engineer with 12 years shipping end-to-end machine learning from problem framing to production. Deep roots in core DS — ad-tech ranking & user acquisition (Appodeal, Chartboost), fraud detection, NLP (RavenPack), recommender systems, Bayesian Bandits / RL, and large-scale experimentation on Spark / Databricks. Current work in GenAI: LLM-as-judge product that scores software vendors, grounding raw vendor documentation into cited evidence, scoring engines. Owned  the typed output contract and the correctness gate set. Approach driven by simplicity, first-principles thinking, and measurable business outcomes.
+Data scientist and ML engineer with 11 years of experience taking machine learning from problem framing to production. In adtech: install-prediction models behind mobile user-acquisition bidding (Appodeal), ad ranking and Bayesian bandits on the DSP side (Chartboost), persona modelling and attribution for programmatic ads (Digilant). Also fraud detection, NLP (RavenPack), recommender systems and large-scale experimentation on Spark and Databricks. Most recent GenAI work: an LLM-as-judge product that scores software vendors from their raw documentation, with cited evidence. Owned the typed output contract and the correctness gates, and built the human ground-truth lane that checks the judge against expert scores.
 
 ---
 
 ## EXPERIENCE
 
 ### Senior AI Engineer
-**Cavendish Professionals → PwC Contractor**  [cavendish-professionals](https://www.linkedin.com/company/cavendish-professionals/) | León, Spain – Remote | *May 2026 – Present*
+**Cavendish Professionals → PwC Contractor**  [cavendish-professionals](https://www.linkedin.com/company/cavendish-professionals/) | León, Spain – Remote | *May 2026 – Sep 2026*
 
-Senior engineer on an LLM-as-judge product that scores software vendors. Built the human ground-truth lane alone — domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up — the lane that reconciles human evaluator scores against model scores and makes the judge's accuracy checkable against ground truth.
+Senior engineer on an LLM-as-judge product that scores software vendors. Built the human ground-truth lane alone: domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up. It reconciles human evaluator scores with model scores, so the judge's accuracy can be checked against ground truth.
 
 **Key Achievements**
 
 - Contributed to every component of the product architecture in a team of three senior AI engineers, a PM and the associate product owner.
 - Introduced and owned schema-driven, domain-driven and spec-driven development: business requirements kept as a contract artifact that agentic development builds against.
-- Owned the typed output contract and the correctness gate set — type baselines per file and rule, a complexity ratchet, mutation tests, required status checks — and designed and managed the end-to-end validation workflows behind them.
+- Owned the typed output contract and the correctness gate set (type baselines per file and rule, a complexity ratchet, mutation tests, required status checks), and designed and managed the end-to-end validation workflows behind them.
 - Created and owned full epics end to end, from business requirement to shipped increment.
-- Ran agentic development at production scale as a measured practice: cost and turn discipline tuned per model tier.
+- Ran agentic coding on the production codebase as a measured practice: cost and turns, tuned per model tier.
 
 ### Data Scientist → DS Technical Lead
 **Appodeal**: [appodeal.com](https://appodeal.com) | León, Spain – Remote | *Dec 2024 – Jan 2026*
 
-Developed install prediction models for mobile user acquisition: cold-start, transformers, user embeddings, transfer learning, MLOps, production pipelines, parity resolution, experimentation, and monitoring. Progressed toward technical leadership based on ownership and strategic perspective.
+Developed install prediction models for mobile user acquisition: cold start, transformers, user embeddings, transfer learning, MLOps, production pipelines, parity, experimentation and monitoring. Promoted to DS technical lead in December 2025.
 
 **Key Achievements**
-- Unified modeling across targets, advertisers, and platforms via attention/transformer architecture, increasing end KPI.
-- Design and deploy cold start for advertiser onboarding in two angles: transfer learning through an affinity tower trained on wider set of interactions and cold advertiser masking validated on held-out cold entities. New advertisers bid from day one from a unified model, with eCPI better than curated whitelists for inventory and demand segments. Custom PyTorch
-- Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until models received identical inputs offline and online and their outputs matched through a complex inference server; productionized parity workflows with unit tests in Databricks.
-- Designed and proposed the user embedding system built from users' interactions with apps; realized with transfer learning at performance parity and orders-of-magnitude cost savings.
+- Replaced separate per-advertiser and per-platform models with one attention model per target, with segment identity as a feature. Launched on 5% of bid requests; later it covered all Android CPI, then iOS.
+- Designed and deployed cold start for advertiser onboarding in two ways: transfer learning through an affinity tower trained on a wider set of interactions, and cold-advertiser masking validated on held-out cold entities. New advertisers bid from day one from the shared model, with eCPI better than curated whitelists for inventory and demand segments. Custom PyTorch.
+- Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until the models received identical inputs offline and online and their outputs matched through the inference server; made parity a workflow with unit tests in Databricks.
+- Proposed and designed the user embedding system, built from users' interactions with apps; delivered with transfer learning at performance parity and orders-of-magnitude lower cost.
 
 <!-- pagebreak -->
 
@@ -45,19 +45,19 @@ Developed install prediction models for mobile user acquisition: cold-start, tra
 Designed and delivered end-to-end ML solutions for international clients; reviewed technical scope, aligned with stakeholders, and supervised model productivization.
 
 **Key Contributions**
-- Led rapid turnaround of underperforming client ML system (utility fraud detection & ranking): diagnosed architectural issues, executed a surgical plan, restored accuracy/efficiency, and recovered client satisfaction.
-- Discovered critical issues in data ingestion and feature-engineering pipelines.
-- Led real-time credit card fraud classifier combining scalable ML with deep VAE. Open version: [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)
+- Led the turnaround of an underperforming client ML system for utility fraud detection and ranking: found the architectural faults, fixed them, and restored accuracy, efficiency and client satisfaction.
+- Found critical faults in the data-ingestion and feature-engineering pipelines.
+- Led development of a real-time credit card fraud classifier combining scalable classical ML with a deep VAE. Open version: [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)
 
 ### Senior Data Scientist
 **Chartboost**: [chartboost.com](https://chartboost.com) | León, Spain – Remote | *Jun 2023 – Jun 2024*
 
-Developed ad ranking and reinforcement learning systems for in-app game advertising; advanced DSP performance through large-scale experimentation and behavioral analysis.
+Developed ad ranking and reinforcement learning systems for in-app game advertising; improved DSP performance through large-scale experiments and behavioral analysis.
 
 **Key Achievements**
-- Evolved and monitored Bayesian Bandit RL system with policy evaluation tools; designed tailored online/offline evaluation frameworks.
-- Built Two-Towers neural ranking algorithm based on recommender systems.
-- Post-mortem analysis of adversarial DSP dynamics and model feedback loops.
+- Evolved and monitored a Bayesian-bandit RL system with policy-evaluation tools; designed online/offline evaluation frameworks for it.
+- Built a two-tower neural ranking model for ads.
+- Ran post-mortems on adversarial DSP dynamics and model feedback loops.
 
 ### Machine Learning Engineer
 **RavenPack** | León, Spain – Remote | *Mar 2022 – Jan 2023*
@@ -67,7 +67,7 @@ Researched, implemented, and maintained text analytics, NLU, and semantic search
 **Key Achievements**
 - Few-shot search personalization: simplified architecture, reduced error 30%.
 - Active learning PoC for learn-to-rank: projected 300% annotation efficiency gain.
-- Novel long-text fingerprinting algorithm for duplicate content detection.
+- Long-text fingerprinting algorithm for duplicate content detection.
 
 #### Earlier Roles
 
@@ -88,9 +88,9 @@ On-demand projects in semantic search, time series forecasting, and portfolio op
 
 | **Core Technologies** | **Machine Learning & GenAI** |
 | --- | --- |
-| Python, FastAPI, Pydantic, PostgreSQL, PyTorch, Transformers, Azure OpenAI / Azure / AKS, AWS/S3, Databricks, PySpark, Pandas, SQL, Docker, MLflow, Git, GitHub Actions, AI-augmented tools (Ollama, llama.cpp, Hermes Agent) | LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction & provenance, scoring engines, Deep Learning (attention, embeddings, transfer learning), Recommender Systems, NLP, RL / Bayesian Bandits, MLOps (parity, A/B, monitoring), Few-Shot / Active Learning, Ranking |
+| Python, FastAPI, Pydantic, PostgreSQL, PyTorch, Transformers, Azure OpenAI / Azure / AKS, AWS/S3, Databricks, PySpark, Pandas, SQL, Docker, MLflow, Git, GitHub Actions, AI-augmented tools (Ollama, llama.cpp, Hermes Agent) | LLMs, RAG, agentic systems, LangChain / LangGraph-style orchestration, document extraction & provenance, scoring engines, Deep Learning (attention, embeddings, transfer learning), Recommender Systems, NLP, RL / Bayesian Bandits, MLOps (parity, A/B, monitoring), Few-Shot / Active Learning, adtech ranking and install prediction for bidding (DSP, mobile UA) |
 | **Engineering Practices** | **Consulting & Soft Skills** |
-| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting delivery, stakeholder communication, correctness gatekeeping, mentoring, business impact focus, simplification / unification |
+| Clean code, typed contracts as source of truth, CI drift gates, OOP & FP, TDD / local e2e harnesses, reproducible pipelines, Agile / XP, production ownership | Multi-client consulting, stakeholder communication, mentoring, correctness gatekeeping, simplification |
 
 ---
 
@@ -114,9 +114,9 @@ On-demand projects in semantic search, time series forecasting, and portfolio op
 - **not the tao with adrian matias**: [youtube.com/@notTheTaoWithAdrianMatias](https://youtube.com/@notTheTaoWithAdrianMatias)  
   Podcast exploring simplicity, consciousness, reality, machine learning, coding, sovereign AI.
 - **RAG Blog System**: [github.com/adrianmatias/ml-sandbox/tree/master/ragblog](https://github.com/adrianmatias/ml-sandbox/tree/master/ragblog)  
-  Retrieval-augmented generation pipeline integrating LLMs, vector embeddings, and web crawling.
+  RAG over a personal blog archive with local open models: web crawling, vector embeddings and LLMs, evaluated with Ragas using separate generator and judge models.
 - **The Mirror**: https://github.com/adrianmatias/the-mirror  
-  Knowledge repository based on llm-wiki for personalized assistant and insight for agentic AI.
+  Knowledge repository built on llm-wiki for a personal AI assistant: notes and synthesis that persist across sessions.
 - **Credit Card Transaction Fraud Classifier**: [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)  
   Real-time fraud detection API (classical + unsupervised signals). Deploy-ready: FastAPI, Docker, RayServe.
 
