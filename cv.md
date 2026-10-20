@@ -7,24 +7,24 @@ aadrian.mat@gmail.com | +34 654 435 598 | [linkedin.com/in/adrianmatiasdiez](htt
 
 ## PROFILE
 
-Data scientist and ML engineer with 11 years of experience taking machine learning from problem framing to production. In adtech: install-prediction models behind mobile user-acquisition bidding (Appodeal), ad ranking and Bayesian bandits on the DSP side (Chartboost), persona modelling and attribution for programmatic ads (Digilant). Also fraud detection, NLP (RavenPack), recommender systems and large-scale experimentation on Spark and Databricks. Most recent GenAI work: an LLM-as-judge product that scores software vendors from their raw documentation, with cited evidence. Owned the typed output contract and the correctness gates, and built the human ground-truth lane that checks the judge against expert scores.
+Data scientist and ML engineer with 11 years of experience taking machine learning from problem framing to production. In adtech: install-prediction models behind mobile user-acquisition bidding (Appodeal), ad ranking and Bayesian bandits on the DSP side (Chartboost), persona modelling and attribution for programmatic ads (Digilant). Also fraud detection, NLP (RavenPack), recommender systems and large-scale experimentation on Spark and Databricks. Most recent GenAI work: VET, an LLM-backed platform that evaluates enterprise software vendors, turning unstructured documents and expert-scored workshops into one assessment with cited provenance. Owned the typed output contract and the correctness gates, and built the workshop-scoring lane end to end.
 
 ---
 
 ## EXPERIENCE
 
 ### Senior AI Engineer
-**Cavendish Professionals → PwC Contractor**  [cavendish-professionals](https://www.linkedin.com/company/cavendish-professionals/) | León, Spain – Remote | *May 2026 – Sep 2026*
+**Cavendish Professionals → PwC Contractor**  [cavendish-professionals](https://www.linkedin.com/company/cavendish-professionals/) | León, Spain – Remote | *May 2026 – Present*
 
-Senior engineer on an LLM-as-judge product that scores software vendors. Built the human ground-truth lane alone: domain-expert template parser, vendor matching, band placement, tier-weighted averaging and roll-up. It reconciles human evaluator scores with model scores, so the judge's accuracy can be checked against ground truth.
+PwC engagement, May – Sep 2026. One of three senior AI engineers on VET, a vendor-evaluation platform for enterprise software, with a PM and an associate product owner. Two lanes, both ending in a rich assessment: expert workshop scores over hierarchical dimensions, reconciled across evaluators, and the ingestion of unstructured documents.
 
 **Key Achievements**
 
-- Contributed to every component of the product architecture in a team of three senior AI engineers, a PM and the associate product owner.
+- Built the workshop-scoring lane end to end: parser for the domain experts' scoring templates, vendor matching, band placement, tier-weighted averaging and roll-up, reconciling workshops from different evaluators into one assessment.
+- Made provenance a property of the output: statements and metrics in the assessment quote and point back to the raw sources, so a score can be audited instead of trusted.
 - Introduced and owned schema-driven, domain-driven and spec-driven development: business requirements kept as a contract artifact that agentic development builds against.
-- Owned the typed output contract and the correctness gate set (type baselines per file and rule, a complexity ratchet, mutation tests, required status checks), and designed and managed the end-to-end validation workflows behind them.
-- Created and owned full epics end to end, from business requirement to shipped increment.
-- Ran agentic coding on the production codebase as a measured practice: cost and turns, tuned per model tier.
+- Owned the typed output contract and the correctness gate set (type baselines per file and rule, a complexity ratchet, mutation tests, required status checks) and the validation workflows behind them.
+- Owned full epics end to end, contributed to every component of the architecture, and ran agentic coding on the production codebase as a measured practice: cost and turns, tuned per model tier.
 
 ### Data Scientist → DS Technical Lead
 **Appodeal**: [appodeal.com](https://appodeal.com) | León, Spain – Remote | *Dec 2024 – Jan 2026*
@@ -32,9 +32,10 @@ Senior engineer on an LLM-as-judge product that scores software vendors. Built t
 Developed install prediction models for mobile user acquisition: cold start, transformers, user embeddings, transfer learning, MLOps, production pipelines, parity, experimentation and monitoring. Promoted to DS technical lead in December 2025.
 
 **Key Achievements**
-- Replaced separate per-advertiser and per-platform models with one attention model per target, with segment identity as a feature. Launched on 5% of bid requests; later it covered all Android CPI, then iOS.
-- Designed and deployed cold start for advertiser onboarding in two ways: transfer learning through an affinity tower trained on a wider set of interactions, and cold-advertiser masking validated on held-out cold entities. New advertisers bid from day one from the shared model, with eCPI better than curated whitelists for inventory and demand segments. Custom PyTorch.
-- Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until the models received identical inputs offline and online and their outputs matched through the inference server; made parity a workflow with unit tests in Databricks.
+- Unified separate per-advertiser and per-platform pipelines and models into one custom transformer architecture. The new CPI model absorbed the click model and the advertiser-specific models. Rolled out from 5% of bid requests to all Android CPI, then iOS.
+- Implemented a Bayesian evaluation framework for models trained on scarce rewards, to compare them on business metrics with estimated risk instead of a point estimate. Proposed and owned the progressive promotion funnel with milestones, challenger to champion, that grew a model's traffic share to A/B.
+- Designed and deployed cold start for advertiser onboarding in two ways: transfer learning through an affinity tower trained on a wider set of interactions, and cold-advertiser masking validated on held-out cold entities. New advertisers bid from day one, with eCPI better than curated whitelists on inventory and demand segments. Custom PyTorch.
+- Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until the models received identical inputs offline and online, then made parity a workflow with unit tests in Databricks.
 - Proposed and designed the user embedding system, built from users' interactions with apps; delivered with transfer learning at performance parity and orders-of-magnitude lower cost.
 
 <!-- pagebreak -->
