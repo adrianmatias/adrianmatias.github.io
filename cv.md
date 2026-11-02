@@ -48,7 +48,7 @@ Designed and delivered end-to-end ML solutions for international clients; review
 **Key Contributions**
 - Led the turnaround of an underperforming client ML system for utility fraud detection and ranking: found the architectural faults, fixed them, and restored accuracy, efficiency and client satisfaction.
 - Found critical faults in the data-ingestion and feature-engineering pipelines.
-- Led development of a real-time credit card fraud classifier combining gradient boosting (CatBoost) with an unsupervised anomaly score (Isolation Forest). Open version: [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)
+- Led development of a real-time credit card fraud classifier. The open version combines gradient boosting (CatBoost) with an unsupervised anomaly score (Isolation Forest): [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)
 
 ### Senior Data Scientist
 **Chartboost**: [chartboost.com](https://chartboost.com) | León, Spain – Remote | *Jun 2023 – Jun 2024*
@@ -75,7 +75,7 @@ Researched, implemented, and maintained text analytics, NLU, and semantic search
 | | |
 |---|---|
 | **Numbrs** · *Machine Learning Engineer* *Aug 2020 – Oct 2021*<br>Extended Deep Learning / Active Learning for transaction processing; scaled classifier across countries with GDPR-compliant pipelines. | **IEBS School** · *Teacher* *Oct 2019 – Oct 2021*<br>Webinars and masterclasses on real-time Big Data, AI, and ML applications. |
-| **Stratio BD** · *Data Scientist* *Aug 2019 – Aug 2020*<br>Propensity/churn on Spark; BERT+graph email segmentation; multi-source weather DB (Elasticsearch/Flask). | **DOCOMO DIGITAL** · *Data Scientist* *Apr 2017 – Aug 2019*<br>Led unsupervised fraud detection (behaviour clustering, outlier scoring) and default-payment filtering; mentored juniors. |
+| **Stratio BD** · *Data Scientist* *Aug 2019 – Aug 2020*<br>Propensity/churn on Spark; BERT+graph email segmentation; multi-source weather DB (Elasticsearch/Flask). | **DOCOMO DIGITAL** · *Data Scientist* *Apr 2017 – Aug 2019*<br>Led unsupervised fraud detection (behaviour clustering, outlier scoring) and contributed to default-payment filtering; mentored juniors. |
 | **Digilant** · *Machine Learning Engineer* *Jun 2015 – Apr 2017*<br>Redesigned Consumer Persona ML model; Game Theory attribution prototype; co-directed Master's thesis. | **2007–2015** · *Tunnel Site Engineer & Maths & Sciences Tutor*<br>Civil/tunnel engineering; university teaching: Math, Physics, Chemistry. |
 #### Freelance
 
