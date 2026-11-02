@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="How Adrian Matias works: the working principles behind making high-stakes model decisions measurable, then delivering them lean and agentic.">
+<meta name="theme-color" content="#0a0a0a">
+<title>How I work — Adrian Matias</title>
+<link rel="canonical" href="https://taoaieng.io/principles/">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --fg: #e8e6e3;
+    --muted: #8a8680;
+    --dim: #5c5955;
+    --accent: #c9a227;
+    --accent-dim: #8a7020;
+    --border: #1e1e1e;
+    --card: #111111;
+    --font: "Segoe UI", system-ui, -apple-system, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    --max: 820px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { color: #e0bc45; }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 22px; }
+
+  .nav { border-bottom: 1px solid var(--border); }
+  .nav-inner {
+    max-width: var(--max); margin: 0 auto; padding: 12px 22px;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .nav-brand { font-weight: 700; letter-spacing: .04em; color: var(--fg); font-size: .92rem; }
+  .nav-brand:hover { color: var(--accent); }
+  .nav-links { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .78rem; font-family: var(--mono); }
+  .nav-links a { color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+  .nav-links a:hover { color: var(--accent); }
+
+  header.hero { padding: 56px 0 36px; border-bottom: 1px solid var(--border); }
+  header h1 {
+    font-size: clamp(2rem, 5vw, 2.6rem); font-weight: 700;
+    letter-spacing: -.03em; line-height: 1.1; margin-bottom: 16px;
+  }
+
+  section { padding: 44px 0; border-bottom: 1px solid var(--border); }
+  section:last-of-type { border-bottom: none; }
+  h2 {
+    font-size: .85rem; font-weight: 700; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--fg); margin-bottom: 18px;
+    display: flex; align-items: baseline; gap: 12px;
+  }
+  h2::after { content: ""; flex: 1; height: 1px; background: var(--border); position: relative; top: -2px; }
+  p { color: var(--muted); margin-bottom: 12px; }
+  p.lead { color: var(--fg); font-size: 1.02rem; line-height: 1.7; }
+  p:last-child { margin-bottom: 0; }
+  strong { color: var(--fg); }
+  em { color: var(--fg); }
+  code { font-family: var(--mono); font-size: .86em; }
+
+  .principle {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 8px; padding: 16px 18px; margin-bottom: 12px;
+  }
+  .principle h3 { font-size: 1.02rem; font-weight: 600; color: var(--fg); margin: 0 0 6px; }
+  .principle p { font-size: .94rem; }
+  .principle p.practice { border-left: 2px solid var(--accent-dim); padding-left: 12px; }
+  .principle p.practice em { color: var(--accent); font-style: normal; font-family: var(--mono); font-size: .78rem; letter-spacing: .04em; }
+
+  ul.marks { list-style: none; margin: 0 0 12px; }
+  ul.marks li { position: relative; padding-left: 16px; margin-bottom: 9px; color: var(--muted); }
+  ul.marks li::before { content: "▸"; position: absolute; left: 0; color: var(--accent-dim); font-size: .7rem; top: 4px; }
+  ul.marks li:last-child { margin-bottom: 0; }
+
+  .contact { margin-top: 22px; color: var(--fg); }
+
+  footer {
+    padding: 36px 0 56px; text-align: center;
+    font-size: .8rem; color: var(--dim); font-family: var(--mono);
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="nav-brand" href="/">← taoaieng.io</a>
+    <div class="nav-links">
+      <a href="/">CV</a>
+      <a href="/pub/">Pub</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <h1>How I work</h1>
+    <p class="lead">I make high-stakes model decisions measurable, then deliver them lean and agentic.</p>
+  </header>
+
+  <section>
+    <p>I have done applied machine learning since 2015: ranking, bidding, fraud, NLP, and lately LLM systems. The domains and the model generations changed; the way I work did not. This is that way of working, written down so you can check it before we talk. My agents and I run against these rules every day; a rule that stops paying for itself gets deleted.</p>
+  </section>
+
+  <section id="principles">
+    <h2>What I hold fixed</h2>
+
+    <article class="principle">
+      <h3>Remove before adding.</h3>
+      <p>Most systems I see suffer from what was added, not from what is missing.</p>
+      <p class="practice"><em>In practice:</em> a diagnosis from me always includes what I would cut, and when a simpler model, a simpler pipeline or no model wins, that is what I recommend.</p>
+    </article>
+
+    <article class="principle">
+      <h3>Fix the cause, not the symptom.</h3>
+      <p>A patch on a surface fix becomes the next thing to debug.</p>
+      <p class="practice"><em>In practice:</em> when training and serving disagree, I trace the mismatch to the transformation that causes it, fix it there, and freeze it with a test so the same class of bug cannot come back quietly.</p>
+    </article>
+
+    <article class="principle">
+      <h3>One thin path that runs, before deep machinery.</h3>
+      <p class="practice"><em>In practice:</em> the first thing I build is the whole path — data in, decision out, a number someone can look at — with every stage naive. Then I improve the stage that limits the result.</p>
+    </article>
+
+    <article class="principle">
+      <h3>Keep the uncertainty.</h3>
+      <p>A single score hides how much you do not know. A draft that looks nearly done is not nearly certain to be finished.</p>
+      <p class="practice"><em>In practice:</em> I compare candidate models on expected business impact with its spread, not on a point estimate, and I promote a challenger through stages instead of in one switch.</p>
+    </article>
+
+    <article class="principle">
+      <h3>Decide what "correct" means before building.</h3>
+      <p>Objective first, then the invariants that protect it, then code standards, tests, performance and implementation. When two conflict, the higher one wins.</p>
+      <p class="practice"><em>In practice:</em> model output goes through a typed contract that is written before the code. The model may vary; the contract may not, and a broken contract fails the change instead of the demo.</p>
+    </article>
+
+    <article class="principle">
+      <h3>A gate is only a gate once I have seen it fail.</h3>
+      <p>A check that has never gone red is decoration.</p>
+      <p class="practice"><em>In practice:</em> when I add a quality gate to a pipeline, I plant a known defect and confirm the gate blocks it before I trust it with real changes.</p>
+    </article>
+
+    <article class="principle">
+      <h3>Evidence before claims. Cite or omit.</h3>
+      <p>A number typed into prose is a bug even when it is right.</p>
+      <p class="practice"><em>In practice:</em> I keep a register of every public claim about my own work, each one graded <strong>backed</strong>, <strong>qualify</strong>, <strong>contradicted</strong> or <strong>unsourced</strong>. This page uses only backed ones.</p>
+    </article>
+
+    <article class="principle">
+      <h3>The reviewer is never the author.</h3>
+      <p>Agent-written work is reviewed by a model from a different lab, because models from one family share blind spots.</p>
+      <p class="practice"><em>In practice:</em> a review comes back as failing cases — an input, the expected output, the actual output — not as adjectives.</p>
+    </article>
+
+    <article class="principle">
+      <h3>Agents carry the volume. Judgment stays with a person.</h3>
+      <p>Agents write code; I decide what counts as correct, and I read results, gates and risks rather than every line.</p>
+      <p class="practice"><em>In practice:</em> each change lands through an automated gate; only high-risk changes get a human read.</p>
+    </article>
+
+    <article class="principle">
+      <h3>Your attention is the bottleneck, not my hours.</h3>
+      <p>Option menus are a way of handing my work back to you.</p>
+      <p class="practice"><em>In practice:</em> I come with a decision and the argument for it, and I only ask the questions that only you can answer.</p>
+    </article>
+
+    <article class="principle">
+      <h3>You own everything, from the first day.</h3>
+      <p>Open source and local first where it is good enough; no vendor you cannot leave.</p>
+      <p class="practice"><em>In practice:</em> code, prompts, evaluations and gates live in your repository, so the speed stays when I leave.</p>
+    </article>
+
+    <article class="principle">
+      <h3>Specialist in the method, generalist in the domains.</h3>
+      <p>The method — measurement, evaluation design, calibration, causal reasoning, and the delivery harness around them — is what I refuse to be average at. Domains are where I have applied it: ad-tech ranking and user acquisition, fraud and risk, LLM evaluation. Stacks and model generations are tools; I adopt whatever works and defend none of them.</p>
+      <p class="practice"><em>In practice:</em> I will tell you which part of your problem I am strong at and which part I would hand to someone else.</p>
+    </article>
+  </section>
+
+  <section id="together">
+    <h2>What this means if we work together</h2>
+    <ul class="marks">
+      <li>The person you talk to is the person in the repository.</li>
+      <li>We start with a short, fixed-price diagnosis: what is broken, what is blocking, what I would cut, what I would build, and what I would refuse to build. There is no obligation to continue.</li>
+      <li>Every engagement leaves something general behind for me — a method, a template, a gate — and never your code. I ask in the contract for the right to describe the work, named or anonymised, before it starts.</li>
+      <li>I am not a fit for a ticket with no decision behind it, for hours sold by the unit, or for a team with nobody who can act on a finding.</li>
+    </ul>
+  </section>
+
+  <section id="check">
+    <h2>Where to check this</h2>
+    <ul class="marks">
+      <li>Public work and essays, every number sourced: <a href="/pub/"><code>taoaieng.io/pub</code></a></li>
+      <li>CV: <a href="/"><code>taoaieng.io</code></a></li>
+    </ul>
+    <p class="contact">Write to me with two lines about the decision in front of you: <a href="mailto:aadrian.mat@gmail.com">aadrian.mat@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p><a href="/">taoaieng.io</a> · <a href="/pub/">pub</a> · <a href="mailto:aadrian.mat@gmail.com">aadrian.mat@gmail.com</a></p>
+  </footer>
+</div>
+</body>
+</html>
