@@ -32,11 +32,11 @@ PwC engagement, May – Sep 2026. One of three senior AI engineers on VET, a ven
 Developed install prediction models for mobile user acquisition: cold start, transformers, user embeddings, transfer learning, MLOps, production pipelines, parity, experimentation and monitoring. Promoted to DS technical lead in December 2025.
 
 **Key Achievements**
-- Unified separate per-advertiser and per-platform pipelines and models into one custom transformer architecture. The new CPI model absorbed the click model and the advertiser-specific models. Rolled out from 5% of bid requests to all Android CPI, then iOS.
+- Unified separate per-advertiser and per-platform pipelines and models into one custom transformer architecture. The new CPI model absorbed the click model and the advertiser-specific models. Rolled out to all Android CPI, then iOS.
 - Implemented a Bayesian evaluation framework for models trained on scarce rewards, to compare them on business metrics with estimated risk instead of a point estimate. Proposed and owned the progressive promotion funnel with milestones, challenger to champion, that grew a model's traffic share to A/B.
 - Designed and deployed cold start for advertiser onboarding in two ways: transfer learning through an affinity tower trained on a wider set of interactions, and cold-advertiser masking validated on held-out cold entities. New advertisers bid from day one, with eCPI better than curated whitelists on inventory and demand segments. Custom PyTorch.
 - Resolved parity mismatches and calibration gaps: traced discrepancies in internal transformations until the models received identical inputs offline and online, then made parity a workflow with unit tests in Databricks.
-- Proposed and designed the user embedding system, built from users' interactions with apps; delivered with transfer learning at performance parity and orders-of-magnitude lower cost.
+- Proposed and designed the user embedding system, built from users' interactions with apps; delivered with transfer learning: a separately trained tower whose embeddings enter the install model as extra attention tokens.
 
 <!-- pagebreak -->
 
@@ -48,7 +48,7 @@ Designed and delivered end-to-end ML solutions for international clients; review
 **Key Contributions**
 - Led the turnaround of an underperforming client ML system for utility fraud detection and ranking: found the architectural faults, fixed them, and restored accuracy, efficiency and client satisfaction.
 - Found critical faults in the data-ingestion and feature-engineering pipelines.
-- Led development of a real-time credit card fraud classifier combining scalable classical ML with a deep VAE. Open version: [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)
+- Led development of a real-time credit card fraud classifier combining gradient boosting (CatBoost) with an unsupervised anomaly score (Isolation Forest). Open version: [github.com/adrianmatias/ml-sandbox/tree/master/tx_class](https://github.com/adrianmatias/ml-sandbox/tree/master/tx_class)
 
 ### Senior Data Scientist
 **Chartboost**: [chartboost.com](https://chartboost.com) | León, Spain – Remote | *Jun 2023 – Jun 2024*
@@ -66,8 +66,8 @@ Developed ad ranking and reinforcement learning systems for in-app game advertis
 Researched, implemented, and maintained text analytics, NLU, and semantic search products on massive financial news data; productionized prototypes with emphasis on MLOps and reproducibility.
 
 **Key Achievements**
-- Few-shot search personalization: simplified architecture, reduced error 30%.
-- Active learning PoC for learn-to-rank: projected 300% annotation efficiency gain.
+- Few-shot search personalization: simplified architecture.
+- Active learning PoC for learn-to-rank: uncertainty sampling on a LightGBM ranker, measured as ranking gain per acquired label against a random baseline.
 - Long-text fingerprinting algorithm for duplicate content detection.
 
 #### Earlier Roles
@@ -75,7 +75,7 @@ Researched, implemented, and maintained text analytics, NLU, and semantic search
 | | |
 |---|---|
 | **Numbrs** · *Machine Learning Engineer* *Aug 2020 – Oct 2021*<br>Extended Deep Learning / Active Learning for transaction processing; scaled classifier across countries with GDPR-compliant pipelines. | **IEBS School** · *Teacher* *Oct 2019 – Oct 2021*<br>Webinars and masterclasses on real-time Big Data, AI, and ML applications. |
-| **Stratio BD** · *Data Scientist* *Aug 2019 – Aug 2020*<br>Propensity/churn on Spark; BERT+graph email segmentation; multi-source weather DB (Elasticsearch/Flask). | **DOCOMO DIGITAL** · *Data Scientist* *Apr 2017 – Aug 2019*<br>Led fraud detection (99.8% specificity, &lt;50 ms) and default-payment filtering; mentored juniors. |
+| **Stratio BD** · *Data Scientist* *Aug 2019 – Aug 2020*<br>Propensity/churn on Spark; BERT+graph email segmentation; multi-source weather DB (Elasticsearch/Flask). | **DOCOMO DIGITAL** · *Data Scientist* *Apr 2017 – Aug 2019*<br>Led unsupervised fraud detection (behaviour clustering, outlier scoring) and default-payment filtering; mentored juniors. |
 | **Digilant** · *Machine Learning Engineer* *Jun 2015 – Apr 2017*<br>Redesigned Consumer Persona ML model; Game Theory attribution prototype; co-directed Master's thesis. | **2007–2015** · *Tunnel Site Engineer & Maths & Sciences Tutor*<br>Civil/tunnel engineering; university teaching: Math, Physics, Chemistry. |
 #### Freelance
 
