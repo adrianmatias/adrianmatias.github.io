@@ -14,9 +14,9 @@ Data scientist and ML engineer with 11 years of experience taking machine learni
 ## EXPERIENCE
 
 ### Senior AI Engineer
-**Cavendish Professionals → PwC Contractor**  [cavendish-professionals](https://www.linkedin.com/company/cavendish-professionals/) | León, Spain – Remote | *May 2026 – Present*
+**Big Four firm (via Cavendish)**  [cavendish-professionals](https://www.linkedin.com/company/cavendish-professionals/) | León, Spain – Remote | *May 2026 – Present*
 
-PwC engagement, May – Sep 2026. One of three senior AI engineers on VET, a vendor-evaluation platform for enterprise software, with a PM and an associate product owner. Two lanes, both ending in a rich assessment: expert workshop scores over hierarchical dimensions, reconciled across evaluators, and the ingestion of unstructured documents.
+Engagement with a Big Four professional-services firm, May – Sep 2026. One of three senior AI engineers on VET, a vendor-evaluation platform for enterprise software, with a PM and an associate product owner. Two lanes, both ending in a rich assessment: expert workshop scores over hierarchical dimensions, reconciled across evaluators, and the ingestion of unstructured documents.
 
 **Key Achievements**
 
@@ -24,7 +24,7 @@ PwC engagement, May – Sep 2026. One of three senior AI engineers on VET, a ven
 - Made provenance a property of the output: statements and metrics in the assessment quote and point back to the raw sources, so a score can be audited instead of trusted.
 - Introduced and owned schema-driven, domain-driven and spec-driven development: business requirements kept as a contract artifact that agentic development builds against.
 - Owned the typed output contract and the correctness gate set (type baselines per file and rule, a complexity ratchet, mutation tests, required status checks) and the validation workflows behind them.
-- Owned full epics end to end, contributed to every component of the architecture, and ran agentic coding on the production codebase as a measured practice: cost and turns, tuned per model tier.
+- Owned full epics end to end, contributed to every component of the architecture, and ran agentic coding on the production codebase as a measured practice: cost and turns per model tier, and, by my own count over ten weeks, 116 of my 147 pull requests merged (median 3.0 h) while I reviewed 52 % of the team's others.
 
 ### Data Scientist → DS Technical Lead
 **Appodeal**: [appodeal.com](https://appodeal.com) | León, Spain – Remote | *Dec 2024 – Jan 2026*

@@ -17,7 +17,7 @@ Live: https://adrianmatias.github.io/
 - Zero runtime dependencies (inline CSS/JS only)
 - Hierarchical detail: experience blocks expand/collapse
 - Dark theme, sticky nav, mobile menu
-- Same narrative as the PDF CV (Sr AI Eng / PwC VET / GenAI)
+- Same narrative as the PDF CV (Sr AI Eng / VET at a Big Four firm / GenAI)
 
 ## Local preview
 
